@@ -18,6 +18,10 @@ public class checkCode4 : MonoBehaviour
     public bool spawnPlayer2 = false;
 
     public GameObject player1Dupe, player2;
+
+    public checkPressureMain pressureMain;
+    public checkPressureWall pressureWall;
+
     /* [0] - spawnPlayer
      * [1] - newPlayer
      * [2] - player2Opacity
@@ -35,7 +39,18 @@ public class checkCode4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float value = Mathf.Clamp(float.Parse(inputs[0].text), 0.0f, 100.0f);
+        inputs[0].text = value.ToString();
+        Color currentColor = player2.GetComponent<SpriteRenderer>().color;
+        currentColor.a = float.Parse(inputs[0].text) / 100.0f;
+        Debug.Log(currentColor.a);
+        player2.GetComponent<SpriteRenderer>().color = currentColor;
 
+        if(pressureMain.isActive && pressureWall.isActive)
+        {
+            Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
+            tilemap.SetTile(tilePos, tileB);
+        }
     }
 
     Tile getTile(Tilemap tileMap, Vector3 pos)
@@ -84,13 +99,6 @@ public class checkCode4 : MonoBehaviour
             player1Dupe.SetActive(false);
             player2.SetActive(false);
         }
-
-        float value = Mathf.Clamp(float.Parse(inputs[0].text), 0.0f, 100.0f);
-        inputs[0].text = value.ToString();
-        Color currentColor = player2.GetComponent<SpriteRenderer>().color;
-        currentColor.a =  float.Parse(inputs[0].text)/100.0f;
-        Debug.Log(currentColor.a);
-        player2.GetComponent<SpriteRenderer>().color = currentColor;
     }
 
 }
