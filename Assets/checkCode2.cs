@@ -18,7 +18,9 @@ public class checkCode2 : MonoBehaviour
     public Sprite[] doorSprites;
     public int currentPlayerGold = 0;
 
-    private int originalSwordPrice = 8, originalCoinValue = 1;
+    private int originalSwordPrice = 10, originalCoinValue = 1;
+
+    public bool hasSword;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,12 +31,26 @@ public class checkCode2 : MonoBehaviour
         inputs[0].onEndEdit.AddListener(delegate { currentGoldChanged(); });
         inputs[2].onEndEdit.AddListener(delegate { coinValueChanged(); });
         inputs[3].onEndEdit.AddListener(delegate { swordValueChanged(); });
+
+        hasSword = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        int currentGold = int.Parse(inputs[0].text);
+        int swordPrice = int.Parse(inputs[3].text);
+
+        if ((currentGold >= swordPrice) && !hasSword)
+        {
+            Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
+            tilemap.SetTile(tilePos, tileB);
+            hasSword = true;
+            nextLevel.SetActive(true);
+            currentGold -= swordPrice;
+            inputs[0].text = currentGold.ToString();
+            inputs[4].text = "true";
+        }
     }
 
     Tile getTile(Tilemap tileMap, Vector3 pos)
@@ -49,6 +65,7 @@ public class checkCode2 : MonoBehaviour
      * [1] - currentHealth
      * [2] - coinValue
      * [3] - swordPrice
+     * [4] - hasSword
      */
     public void CheckInputs()
     {
@@ -62,11 +79,15 @@ public class checkCode2 : MonoBehaviour
         Debug.Log("Current Gold is " + currentGold);
         Debug.Log("Sword price is " + swordPrice);
         //Results
-        if(currentGold >= swordPrice)
+        if(currentGold >= swordPrice && !hasSword)
         {
             Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
             tilemap.SetTile(tilePos, tileB);
+            hasSword = true;
             nextLevel.SetActive(true);
+            currentGold -= swordPrice;
+            inputs[0].text = currentGold.ToString();
+            inputs[4].text = "true";
         }
     }
 

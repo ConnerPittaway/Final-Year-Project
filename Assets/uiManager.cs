@@ -57,7 +57,10 @@ public class uiManager : MonoBehaviour
        // spellDescription.enableAutoSizing = true;
         spellDescription.text = "A <color=yellow>function</color> is a pre-defined block of code that performs a certain task based on the code inside of it. Functions can also allow for values to be passed into them which are called parameters or they can be left blank. Functions can "
             + "also return values if specified or just simply run some lines of code. Functions can be called by writing the name of the <color=yellow>function</color> and whilst passing in parameters if they have been defined. Several functions are used in the game but their definitions "
-            + "are hidden. Here is an example: ";
+            + "are hidden. Here is an example: \n" 
+            + "<color=#000080ff>void</color> <color=yellow>unlockDoor</color>(<color = grey>doorToUnlock</color>) {\n"
+            + "    doorToUnlock.locked = false\n"
+            + "}";
     }
 
     public void OnClassStatement()
