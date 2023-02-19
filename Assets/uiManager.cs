@@ -24,7 +24,9 @@ public class uiManager : MonoBehaviour
      //   spellDescription.enableAutoSizing = true;
         spellDescription.text = "An <color=purple>if</color> statement runs a certain piece of code dependent on <color=purple>if</color> the condition defined within the brackets is true or false. <color=purple>If</color> the condition is true then the code underneath the true statement "
         + "within the parenthesis will be run otherwise more conditions can be checked using an '<color=purple>else if</color>' or in the case where you want to check that all other statements were false you can use an <color=purple>else</color>. An <color=purple>if</color> statement can be used to check one "
-        + "condition or multiple conditions.";
+        + "condition or multiple conditions."
+        + "\n\nHere is an example:\n<color=#000080ff>int</color> i = 1\n<color=#000080ff>string</color> name = noName"
+        + "\n<color=purple>if</color> (i == 0) {\n    name = Steve\n}\n<color=purple>else if</color> (i == 1) {\n    name = Bob\n}\n<color=purple>else</color> {\n    name = Dave\n}";
     }
 
     public void OnWhileStatement()
@@ -57,18 +59,20 @@ public class uiManager : MonoBehaviour
        // spellDescription.enableAutoSizing = true;
         spellDescription.text = "A <color=yellow>function</color> is a pre-defined block of code that performs a certain task based on the code inside of it. Functions can also allow for values to be passed into them which are called parameters or they can be left blank. Functions can "
             + "also return values if specified or just simply run some lines of code. Functions can be called by writing the name of the <color=yellow>function</color> and whilst passing in parameters if they have been defined. Several functions are used in the game but their definitions "
-            + "are hidden. Here is an example: \n" 
-            + "<color=#000080ff>void</color> <color=yellow>unlockDoor</color>(<color = grey>doorToUnlock</color>) {\n"
-            + "    doorToUnlock.locked = false\n"
+            + "are hidden.\n\nHere is an example: \n" 
+            + "<color=#000080ff>void</color> <color=yellow>unlockDoor</color>(<color=grey>doorToUnlock</color>) {\n"
+            + "    <color=grey>doorToUnlock</color>.locked = false\n"
             + "}";
     }
 
     public void OnClassStatement()
     {
-       // spellDescription.enableAutoSizing = true;
+        // spellDescription.enableAutoSizing = true;
         spellDescription.text = "A <color=#000080ff>class</color> is a user defined data type, it is used as a container for attributes (variables) and methods (functions) that belong to it. Objects can be created from <color=#000080ff>class</color> and can also be referred to as instances. Attributes and methods "
-            + "can be publically declared meaning they are visible outside of the <color=#000080ff>class</color> or private meaning they can only be accessed within the <color=#000080ff>class</color> - for simplicity all classes in the game are public by default but these are usually private unless declared as public.\n"
-            + "Classes are a corner stone of Object Orientated Programming, more information on OOP can be found at: https://www.geeksforgeeks.org/introduction-of-object-oriented-programming/";
+            + "can be publically declared meaning they are visible outside of the <color=#000080ff>class</color> or private meaning they can only be accessed within the <color=#000080ff>class</color> - for simplicity all classes in the game are public by default but these are usually private unless declared as public."
+            + " Classes are a corner stone of Object Orientated Programming.\n\nHere is an example:\n<color=#000080ff>class</color> Player {\n<color=#000080ff>    int</color> health = 10\n}";
+
+       // , more information on OOP can be found at: https://www.geeksforgeeks.org/introduction-of-object-oriented-programming/";
     }
 
     public void OnReset()

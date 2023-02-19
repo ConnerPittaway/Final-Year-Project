@@ -6122,8 +6122,8 @@ MonoBehaviour:
     numberOfAttacks =\n}\n<color=purple>for</color> dragon.NumberAttacks {\n    player.CurrentHealth
     -= dragon.currentAttack\n}\n<color=purple>for</color> player.NumberAttacks {\n   
     dragon.CurrentHealth -= player.currentAttack\n}\n\n<color=purple>if </color>(player.currentHealth
-    <= 0) {\n\tkillPlayer();\n}\n<color=purple>if </color>(dragon.currentHealth <=
-    0) {\n\tkillDragon();\n\tunlockDoor();\n}"
+    <= 0) {\n\tkillPlayer()\n}\n<color=purple>if </color>(dragon.currentHealth <=
+    0) {\n\tkillDragon()\n\tunlockDoor()\n}"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
