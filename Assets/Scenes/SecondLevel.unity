@@ -6897,7 +6897,7 @@ MonoBehaviour:
     currentGold =\n<color=#000080ff>int</color> currentHealth =\n<color=#000080ff>bool</color>
     hasSword =\n}\n\n<color=#000080ff>class</color> Coin {\n<color=#000080ff>int</color>
     value =\n}\n\n<color=#000080ff>int</color> swordPrice =\n\n<color=purple>while</color>
-    player.HasSword == false\n{\n    doorIsLocked = true\n    <color=purple>if</color>
+    (player.HasSword == false)\n{\n    doorIsLocked = true\n    <color=purple>if</color>
     (currentGold >= swordPrice)\n    {\n       <color=yellow> buySword()</color>\n   
     }\n}"
   m_isRightToLeft: 0

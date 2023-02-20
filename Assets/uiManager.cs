@@ -33,13 +33,15 @@ public class uiManager : MonoBehaviour
     {
        // spellDescription.enableAutoSizing = true;
         spellDescription.text = "A <color=purple>while</color> loop will continuosly run a piece of code <color=purple>while</color> the defined condition is true. To avoid the loop being infinite there should be a way to meet the condition of the <color=purple>while</color> loop so "
-            + "the loop can be exited and other code can execute afterwards.";
+            + "the loop can be exited and other code can execute afterwards.\n\nHere is an example:\n"
+            + "<color=#000080ff>int</color> i = 0\n<color=purple>while</color> (i < 4) {\n    i += 1\n}";
     }
 
     public void OnForStatement()
     {
       //  spellDescription.enableAutoSizing = true;
-        spellDescription.text = "A <color=purple>for</color> loop will run a piece of code <color=purple>for</color> a certain amount of times defined in the loop condition hence the name <color=purple>for</color> loop. <color=purple>For</color> loops can be used to iterate <color=purple>for</color> the number of elements in a storage location or <color=purple>for</color> a set number of times";
+        spellDescription.text = "A <color=purple>for</color> loop will run a piece of code <color=purple>for</color> a certain amount of times defined in the loop condition hence the name <color=purple>for</color> loop. <color=purple>For</color> loops can be used to iterate <color=purple>for</color> the number of elements in a storage location or <color=purple>for</color> a set number of times"
+            + "\n\nHere is an example:\n<color=purple>for</color> (int i = 0; i < 4; i++) {\n    print(i)\n}";
     }
 
     public void OnVariableStatement()

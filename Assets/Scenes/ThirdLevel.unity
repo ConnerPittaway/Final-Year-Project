@@ -6119,11 +6119,11 @@ MonoBehaviour:
     currentHealth =\n<color=#000080ff>int</color> currentAttack =\n<color=#000080ff>int</color>
     numberOfAttacks =\n}\n<color=#000080ff>class</color> Dragon {\n<color=#000080ff>int</color>
     currentHealth =\n<color=#000080ff>int</color> currentAttack =\n<color=#000080ff>int</color>
-    numberOfAttacks =\n}\n<color=purple>for</color> dragon.NumberAttacks {\n    player.CurrentHealth
-    -= dragon.currentAttack\n}\n<color=purple>for</color> player.NumberAttacks {\n   
-    dragon.CurrentHealth -= player.currentAttack\n}\n\n<color=purple>if </color>(player.currentHealth
-    <= 0) {\n\tkillPlayer()\n}\n<color=purple>if </color>(dragon.currentHealth <=
-    0) {\n\tkillDragon()\n\tunlockDoor()\n}"
+    numberOfAttacks =\n}\n<color=purple>for</color> (int i = 0; i < dragon.NumberAttacks;
+    i++) {\n    player.CurrentHealth -= dragon.currentAttack\n}\n<color=purple>for</color>
+    (int i = 0; i < player.NumberAttacks; i++) {\n    dragon.CurrentHealth -= player.currentAttack\n}\n\n<color=purple>if
+    </color>(player.currentHealth <= 0) {\n\tkillPlayer()\n}\n<color=purple>if </color>(dragon.currentHealth
+    <= 0) {\n\tkillDragon()\n\tunlockDoor()\n}"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
@@ -6150,8 +6150,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.5
-  m_fontSizeBase: 13.5
+  m_fontSize: 13.3
+  m_fontSizeBase: 13.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
