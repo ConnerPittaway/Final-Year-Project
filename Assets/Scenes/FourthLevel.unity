@@ -9677,13 +9677,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<color=#000080ff>class</color> Player1 {\n<color=#000080ff>int</color>
+  m_text: "<color=#000080ff>class</color> Player1 {\n<color=#000080ff>bool</color>
     spawnPlayer2 = \n}\n<color=#000080ff>class</color> Player2 {\n<color=#000080ff>int</color>
     opacity =\n<color=#000080ff>int</color> canActivate =\n}\n\nplayer1 = <color=#000080ff>new</color>
     Player1\n<color=purple>if</color>(player1.spawnPlayer2 == true) {\n    player2
     = <color=#000080ff>new</color> \n}  \n\n<color=purple>while</color> (doorisLocked
-    == true && player2 is Player2) {\n    <color=purple>if</color> player2.opacity
-    < 50 {\n        player2.ghost = true\n        player2.canActivate = false\n   
+    == true && player2 is Player2) {\n    <color=purple>if</color> (player2.opacity
+    <= 50) {\n        player2.ghost = true\n        player2.canActivate = false\n   
     }\n    <color=purple>else</color> {\n        player2.ghost = false\n        player2.canActivate
     = true\n    }\n\n    <color=purple>if </color>(<color=yellow>OnPlate</color>(player1)
     == true && \n        <color=yellow>OnPlate</color>(player2) == true) {\n            
@@ -9822,7 +9822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: true
+  m_text: false
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13850,9 +13850,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: true
-      m_Image: {fileID: 0}
     - m_Text: false
+      m_Image: {fileID: 0}
+    - m_Text: true
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
