@@ -6,10 +6,15 @@ using TMPro;
 
 public class uiManager : MonoBehaviour
 {
-    public TMP_Text spellDescription;
+    //Hint Screen
+    public GameObject hintScreen, hintScreenButton;
 
+    //Spellbook
+    public GameObject spellBook, spellBookButton;
+    public TMP_Text spellDescription;
     private float defaultTextSize = 15.0f;
     private float introTextSize = 25.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +27,20 @@ public class uiManager : MonoBehaviour
 
     }
 
+    //Hint Screen
+    public void HintScreenOpen()
+    {
+        hintScreen.SetActive(true);
+        hintScreenButton.SetActive(false);
+    }
+
+    public void HintScreenClose()
+    {
+        hintScreen.SetActive(false);
+        hintScreenButton.SetActive(true);
+    }
+
+    //SpellBook
     public void OnIfStatement()
     {
         spellDescription.fontSize = defaultTextSize;
@@ -84,5 +103,18 @@ public class uiManager : MonoBehaviour
     {
         spellDescription.fontSize = introTextSize;
         spellDescription.text = "<u>Choose a spell to learn more about it!</u>";
+    }
+
+    public void SpellBookClose()
+    {
+        spellBook.SetActive(false);
+        spellBookButton.SetActive(true);
+        OnReset();
+    }
+
+    public void SpellBookOpen()
+    {
+        spellBook.SetActive(true);
+        spellBookButton.SetActive(false);
     }
 }
