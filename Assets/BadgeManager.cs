@@ -34,7 +34,6 @@ public class BadgeManager : MonoBehaviour
         */
 
         //Unlock Door
-        Achievements.Instance.achievements["unlockDoor"] = true;
         if (!Achievements.Instance.achievements["unlockDoor"])
         {
             AlterAlpha(false, badges[0]);

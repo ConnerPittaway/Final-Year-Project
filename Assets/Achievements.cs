@@ -106,11 +106,11 @@ public class Achievements : MonoBehaviour
             achievements[achievementName] = status;
             if (achievementName == "spawnDupe")
             {
-                buffPlayer = true;
+                spawnDupe = true;
             }
             else if (achievementName == "turnIntoGhost")
             {
-                nerfDragon = true;
+                turnIntoGhost = true;
             }
         }
     }

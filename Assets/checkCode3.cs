@@ -188,7 +188,11 @@ public class checkCode3 : MonoBehaviour
                     (playerHealthbar.transform.gameObject).SetActive(false);
                     playerDead = true;
                 }
-                playerHealthbar.healthBar.SetHealth(playerHealth, playerHealthbar.maxHealth);
+                else
+                {
+                    playerHealthbar.health = playerHealth;
+                    playerHealthbar.healthBar.SetHealth(playerHealth, playerHealthbar.maxHealth);
+                }
             }
         }
 
@@ -218,7 +222,9 @@ public class checkCode3 : MonoBehaviour
                 }
                 else
                 {
+                    dragonHealthbar.health = dragonHealth;
                     dragonHealthbar.healthBar.SetHealth(dragonHealth, dragonHealthbar.maxHealth);
+
                 }
             }
         }
