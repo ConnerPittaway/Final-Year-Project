@@ -46,6 +46,12 @@ public class checkCode4 : MonoBehaviour
         Debug.Log(currentColor.a);
         player2.GetComponent<SpriteRenderer>().color = currentColor;
 
+        if(currentColor.a <= 0.5 && Achievements.Instance.achievements["turnIntoGhost"] == false)
+        {
+            Achievements.Instance.achievements["turnIntoGhost"] = true;
+            Debug.Log("Achievement");
+        }
+
         if(pressureMain.isActive && pressureWall.isActive)
         {
             Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
@@ -87,6 +93,11 @@ public class checkCode4 : MonoBehaviour
             Debug.Log("Player1");
             player1Dupe.SetActive(true);
             player2.SetActive(false);
+            if(Achievements.Instance.achievements["spawnDupe"] == false)
+            {
+                Achievements.Instance.achievements["spawnDupe"] = true;
+                Debug.Log("Achievement");
+            }
         }
         else if(spawnPlayer2 && newPlayer == "Player2")
         {

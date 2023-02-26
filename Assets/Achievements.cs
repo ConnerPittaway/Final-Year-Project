@@ -17,7 +17,10 @@ public class Achievements : MonoBehaviour
     public bool changeGoldAchievement, changeCoinAchievement, changeSwordPriceAchievement;
     //Level 3
     public bool buffPlayer, nerfDragon;
-
+    //Level 4
+    public bool spawnDupe, turnIntoGhost;
+    //Level 5
+    public bool answerQ1, answerQ2;
     private void Awake()
     {
         if(Instance == null)
@@ -38,7 +41,9 @@ public class Achievements : MonoBehaviour
         achievements = new SortedDictionary<string, bool> {
             {"unlockDoor", false }, {"changeBool", false },
             {"changeCurrentGold", false }, {"changeCoinValue", false}, {"changeSwordPrice", false},
-            {"buffPlayer", false }, {"nerfDragon", false}
+            {"buffPlayer", false }, {"nerfDragon", false},
+            {"spawnDupe", false }, {"turnIntoGhost", false},
+            {"answerQ1", false }, {"answerQ2", false}
         };
     }
 
@@ -88,6 +93,22 @@ public class Achievements : MonoBehaviour
                 buffPlayer = true;
             }
             else if (achievementName == "nerfDragon")
+            {
+                nerfDragon = true;
+            }
+        }
+    }
+
+    public void SetAchievementsLevel4(string achievementName, bool status)
+    {
+        if (achievements.ContainsKey(achievementName))
+        {
+            achievements[achievementName] = status;
+            if (achievementName == "spawnDupe")
+            {
+                buffPlayer = true;
+            }
+            else if (achievementName == "turnIntoGhost")
             {
                 nerfDragon = true;
             }

@@ -19,7 +19,7 @@ public class BadgeManager : MonoBehaviour
 
     }
 
-    void UpdateBadgeState()
+    public void UpdateBadgeState()
     {
         /*List
             *badges[0] - unlockDoor
@@ -29,6 +29,8 @@ public class BadgeManager : MonoBehaviour
             *badges[4] - changeSwordPrice
             *badges[5] - buffPlayer
             *badges[6] - nerfDragon
+            *badges[7] - spawnDupe
+            *badges[8] - turnIntoGhost
         */
 
         //Unlock Door
@@ -107,6 +109,28 @@ public class BadgeManager : MonoBehaviour
         else
         {
             AlterAlpha(true, badges[6]);
+        }
+
+        //Spawn Dupe
+        if (!Achievements.Instance.achievements["spawnDupe"])
+        {
+            AlterAlpha(false, badges[7]);
+            Debug.Log("Here");
+        }
+        else
+        {
+            AlterAlpha(true, badges[7]);
+        }
+
+        //Turn Into Ghost
+        if (!Achievements.Instance.achievements["turnIntoGhost"])
+        {
+            AlterAlpha(false, badges[8]);
+            Debug.Log("Here");
+        }
+        else
+        {
+            AlterAlpha(true, badges[8]);
         }
     }
 

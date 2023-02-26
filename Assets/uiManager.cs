@@ -15,6 +15,10 @@ public class uiManager : MonoBehaviour
     private float defaultTextSize = 15.0f;
     private float introTextSize = 25.0f;
 
+    //Badges
+    public GameObject badgesScreen, badgesButton;
+    public BadgeManager badgeManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +29,20 @@ public class uiManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    //Badges
+    public void BadgesScreenOpen()
+    {
+        badgeManager.UpdateBadgeState();
+        badgesScreen.SetActive(true);
+        badgesButton.SetActive(false);
+    }
+
+    public void BadgesScreenClose()
+    {
+        badgesScreen.SetActive(false);
+        badgesButton.SetActive(true);
     }
 
     //Hint Screen
