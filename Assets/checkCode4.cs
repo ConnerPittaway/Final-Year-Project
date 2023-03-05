@@ -55,6 +55,11 @@ public class checkCode4 : MonoBehaviour
 
         if(pressureMain.isActive && pressureWall.isActive)
         {
+            //Play Sound
+            if (nextLevel.active == false)
+            {
+                Audio.Instance.PlaySFX("Door Open");
+            }
             nextLevel.SetActive(true);
             Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
             tilemap.SetTile(tilePos, tileB);

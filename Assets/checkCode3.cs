@@ -98,6 +98,12 @@ public class checkCode3 : MonoBehaviour
 
         if(dragonHealth <= 0)
         {
+            //Play Sound
+            if (nextLevel.active == false)
+            {
+                Audio.Instance.PlaySFX("Door Open");
+            }
+
             nextLevel.SetActive(true);
             dragonDead = true;
             Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
@@ -218,7 +224,12 @@ public class checkCode3 : MonoBehaviour
             {
                 if (dragonHealth <= 0)
                 {
-                    //Destroy()
+                    //Play Sound
+                    if (nextLevel.active == false)
+                    {
+                        Audio.Instance.PlaySFX("Door Open");
+                    }
+
                     nextLevel.SetActive(true);
                     (dragonHealthbar.transform.gameObject).SetActive(false);
                     dragonDead = true;
