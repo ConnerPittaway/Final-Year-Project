@@ -29,6 +29,14 @@ public class nextLevel : MonoBehaviour
             {
                 SceneManager.LoadScene("ThirdLevel");
             }
+            else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("ThirdLevel"))
+            {
+                SceneManager.LoadScene("FourthLevel");
+            }
+            else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("FourthLevel"))
+            {
+                SceneManager.LoadScene("FifthLevel");
+            }
         }
     }
 }

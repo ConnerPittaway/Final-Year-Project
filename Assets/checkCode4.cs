@@ -7,6 +7,7 @@ using TMPro;
 
 public class checkCode4 : MonoBehaviour
 {
+    public GameObject nextLevel;
     public Tile tile;
     public Tilemap tilemap;
     public TileBase tileA;
@@ -54,6 +55,7 @@ public class checkCode4 : MonoBehaviour
 
         if(pressureMain.isActive && pressureWall.isActive)
         {
+            nextLevel.SetActive(true);
             Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
             tilemap.SetTile(tilePos, tileB);
         }

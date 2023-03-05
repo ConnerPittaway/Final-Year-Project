@@ -5949,6 +5949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192d576390025d3418b6279354632bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: {fileID: 1958904491}
   tile: {fileID: 0}
   tilemap: {fileID: 1884237190}
   tileA: {fileID: 11400000, guid: 321983029a199ef4b9729444866001c4, type: 2}
@@ -15170,13 +15171,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1958904493}
   - component: {fileID: 1958904492}
+  - component: {fileID: 1958904494}
   m_Layer: 0
   m_Name: NextLevelCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1958904492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15218,6 +15220,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1958904494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958904491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d6f9edce7bbac49b3e2d6539aaa2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1986404691
 GameObject:
   m_ObjectHideFlags: 0

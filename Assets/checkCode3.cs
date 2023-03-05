@@ -7,6 +7,7 @@ using TMPro;
 
 public class checkCode3 : MonoBehaviour
 {
+    public GameObject nextLevel;
     public Tile tile;
     public Tilemap tilemap;
     public TileBase tileA;
@@ -96,6 +97,7 @@ public class checkCode3 : MonoBehaviour
 
         if(dragonHealth <= 0)
         {
+            nextLevel.SetActive(true);
             dragonDead = true;
             Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
             tilemap.SetTile(tilePos, tileB);
@@ -215,6 +217,7 @@ public class checkCode3 : MonoBehaviour
                 if (dragonHealth <= 0)
                 {
                     //Destroy()
+                    nextLevel.SetActive(true);
                     (dragonHealthbar.transform.gameObject).SetActive(false);
                     dragonDead = true;
                     Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
@@ -247,13 +250,6 @@ public class checkCode3 : MonoBehaviour
         else if(dragonHealth <= 0)
         {
             Debug.Log("Dragon Already Defeated");
-        }
-
-        //Results
-        if (dragonHealth <= 0)
-        {
-            Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
-            tilemap.SetTile(tilePos, tileB);
         }
     }
 
