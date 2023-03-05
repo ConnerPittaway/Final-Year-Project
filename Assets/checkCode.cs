@@ -52,6 +52,13 @@ public class checkCode : MonoBehaviour
             else if(textFields[0].text == "false" && textFields[1].text == "true")
             {
                 Debug.Log("Second");
+
+                //Play Sound
+                if (nextLevel.active == false)
+                {
+                    Audio.Instance.PlaySFX("Door Open");
+                }
+
                 Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
                 tilemap.SetTile(tilePos, tileB);
                 nextLevel.SetActive(true);
@@ -63,10 +70,18 @@ public class checkCode : MonoBehaviour
                // Tile tile = ScriptableObject.CreateInstance<Tile>();
                // tile.sprite = doorSprites[0];
                 Debug.Log("Third");
+
+                //Play Sound
+                if(nextLevel.active == false)
+                {
+                    Audio.Instance.PlaySFX("Door Open");
+                }
+
                 Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
                 tilemap.SetTile(tilePos, tileB);
                 nextLevel.SetActive(true);
                 Achievements.Instance.SetAchievementsLevel1("changeBool", true);
+
             }
             //Invalid inputs
             else
