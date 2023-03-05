@@ -48,12 +48,14 @@ public class uiManager : MonoBehaviour
     //Hint Screen
     public void HintScreenOpen()
     {
+        Audio.Instance.PlaySFX("Click");
         hintScreen.SetActive(true);
         hintScreenButton.SetActive(false);
     }
 
     public void HintScreenClose()
     {
+        Audio.Instance.PlaySFX("Click");
         hintScreen.SetActive(false);
         hintScreenButton.SetActive(true);
     }
