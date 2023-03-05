@@ -7,6 +7,7 @@ using TMPro;
 
 public class checkCode5 : MonoBehaviour
 {
+    public GameObject questionScreen;
     public GameObject nextLevel;
     public Tile tile;
     public Tilemap tilemap;
@@ -47,5 +48,11 @@ public class checkCode5 : MonoBehaviour
          * [1] - canActivate
         */
         //Quiz Start
+
+        if(inputs[1].text == "false")
+        {
+            inputs[1].text = "true";
+            questionScreen.SetActive(true);
+        }
     }
 }

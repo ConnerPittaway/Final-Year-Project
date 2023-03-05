@@ -5330,8 +5330,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: checkCode, Assembly-CSharp
+      - m_Target: {fileID: 670005108}
+        m_TargetAssemblyTypeName: checkCode5, Assembly-CSharp
         m_MethodName: CheckInputs
         m_Mode: 1
         m_Arguments:
@@ -11926,6 +11926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c23ed4a8f7c8554db678a79d1743aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questionScreen: {fileID: 1310542927}
   nextLevel: {fileID: 1958904491}
   tile: {fileID: 0}
   tilemap: {fileID: 1884237190}
@@ -13051,7 +13052,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &732476132
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14214,9 +14215,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1768156843}
-        m_TargetAssemblyTypeName: uiManager, Assembly-CSharp
-        m_MethodName: SpellBookOpen
+      - m_Target: {fileID: 1310542929}
+        m_TargetAssemblyTypeName: questionManager, Assembly-CSharp
+        m_MethodName: wrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16439,9 +16440,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1768156843}
-        m_TargetAssemblyTypeName: uiManager, Assembly-CSharp
-        m_MethodName: SpellBookOpen
+      - m_Target: {fileID: 1310542929}
+        m_TargetAssemblyTypeName: questionManager, Assembly-CSharp
+        m_MethodName: Question2Correct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17981,7 +17982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1138140401
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20723,7 +20724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1310542928
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21152,9 +21153,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1768156843}
-        m_TargetAssemblyTypeName: uiManager, Assembly-CSharp
-        m_MethodName: SpellBookOpen
+      - m_Target: {fileID: 1310542929}
+        m_TargetAssemblyTypeName: questionManager, Assembly-CSharp
+        m_MethodName: wrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26575,9 +26576,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1768156843}
-        m_TargetAssemblyTypeName: uiManager, Assembly-CSharp
-        m_MethodName: SpellBookOpen
+      - m_Target: {fileID: 1310542929}
+        m_TargetAssemblyTypeName: questionManager, Assembly-CSharp
+        m_MethodName: wrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
