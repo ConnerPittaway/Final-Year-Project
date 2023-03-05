@@ -42,6 +42,10 @@ public class checkCode5 : MonoBehaviour
 
     public void CheckInputs()
     {
+        // Input Fields
+        /* [0] - player2Opacity
+         * [1] - canActivate
+        */
         //Quiz Start
     }
 }

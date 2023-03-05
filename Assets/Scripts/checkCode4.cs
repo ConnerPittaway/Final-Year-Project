@@ -23,11 +23,14 @@ public class checkCode4 : MonoBehaviour
     public checkPressureMain pressureMain;
     public checkPressureWall pressureWall;
 
+    // Text Fields
     /* [0] - spawnPlayer
      * [1] - newPlayer
-     * [2] - player2Opacity
-     * [3] - player2CanActivate
-     */
+    */
+    // Input Fields
+    /* [0] - player2Opacity
+     * [1] - canActivate
+    */
     // Start is called before the first frame update
     void Start()
     {
@@ -77,10 +80,10 @@ public class checkCode4 : MonoBehaviour
     // Text Fields
     /* [0] - spawnPlayer
      * [1] - newPlayer
-     * [2] - canActivate
     */  
     // Input Fields
     /* [0] - player2Opacity
+     * [1] - canActivate
     */
 
     public void CheckInputs()
