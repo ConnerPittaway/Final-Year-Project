@@ -81,6 +81,7 @@ public class checkCode3 : MonoBehaviour
             Debug.Log("Running");
             if(dragonHealth > 0)
             {
+                Audio.Instance.PlaySFX("Damage");
                 dragonHealthbar.dragonTakeDamage(playerAttack);
                 dragonHealth = (int)dragonHealthbar.health;
                 inputs[3].text = dragonHealthbar.health.ToString();
@@ -126,6 +127,7 @@ public class checkCode3 : MonoBehaviour
             Debug.Log("Running");
             if (playerHealth > 0)
             {
+                Audio.Instance.PlaySFX("Damage");
                 playerHealthbar.playerTakeDamage(dragonAttack);
                 playerHealth = (int)playerHealthbar.health;
                 inputs[0].text = playerHealthbar.health.ToString();
