@@ -8,7 +8,7 @@ public class Audio : MonoBehaviour
     public static Audio Instance;
     public Sounds[] musicSound, sfxSounds;
     public AudioSource backgroundSource, sfxSource;
-
+    public string currentlyPlaying;
     private void Awake()
     {
         if (Instance == null)
@@ -24,7 +24,7 @@ public class Audio : MonoBehaviour
 
     public void Start()
     {
-        PlayMusic("Background Music Track 1");
+        //PlayMusic("Background Music Track 1");
     }
 
     public void PlayMusic(string name)
@@ -39,6 +39,7 @@ public class Audio : MonoBehaviour
         {
             backgroundSource.clip = s.audioClip;
             backgroundSource.Play();
+            currentlyPlaying = name;
         }
     }
 

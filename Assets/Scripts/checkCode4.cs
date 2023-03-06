@@ -34,6 +34,10 @@ public class checkCode4 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (Audio.Instance.currentlyPlaying != "Background Music Track 2")
+        {
+            Audio.Instance.PlayMusic("Background Music Track 2");
+        }
         levelManager.Instance.unlockedLevels[3] = true;
         inputs[0].characterLimit = 3;
         //Start Tile
@@ -68,14 +72,6 @@ public class checkCode4 : MonoBehaviour
             Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
             tilemap.SetTile(tilePos, tileB);
         }
-    }
-
-    Tile getTile(Tilemap tileMap, Vector3 pos)
-    {
-        Vector3Int tilePos = tileMap.WorldToCell(pos);
-        Tile tile = tilemap.GetTile<Tile>(tilePos);
-
-        return tile;
     }
 
     // Text Fields

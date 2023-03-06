@@ -32,6 +32,10 @@ public class checkCode3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (Audio.Instance.currentlyPlaying != "Background Music Track 2")
+        {
+            Audio.Instance.PlayMusic("Background Music Track 2");
+        }
         levelManager.Instance.unlockedLevels[2] = true;
         playerDead = false;
         dragonDead = false;

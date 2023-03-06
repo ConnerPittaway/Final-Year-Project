@@ -155,6 +155,10 @@ MonoBehaviour:
   musicSound:
   - soundName: Background Music Track 1
     audioClip: {fileID: 8300000, guid: 2ecb5b5997ceb254cb7352f323ebf737, type: 3}
+  - soundName: Background Music Track 2
+    audioClip: {fileID: 8300000, guid: 9cca427279a65934e9c185a59a20bb5c, type: 3}
+  - soundName: Background Music Track 3
+    audioClip: {fileID: 8300000, guid: 5a798633ca36c0149ae9824c5c10edfd, type: 3}
   sfxSounds:
   - soundName: Click
     audioClip: {fileID: 8300000, guid: 9e28d303050f0914185a0c2f22bd2e78, type: 3}
@@ -163,6 +167,14 @@ MonoBehaviour:
   - soundName: Door Open
     audioClip: {fileID: 8300000, guid: 15fec8c3baeb5e744b9e822c9c951c12, type: 3}
   - soundName: Next Level
+    audioClip: {fileID: 8300000, guid: c6eab4f2c88c96340af190dabfa5027f, type: 3}
+  - soundName: Coin
+    audioClip: {fileID: 8300000, guid: c6eab4f2c88c96340af190dabfa5027f, type: 3}
+  - soundName: Dragon Death
+    audioClip: {fileID: 8300000, guid: c6eab4f2c88c96340af190dabfa5027f, type: 3}
+  - soundName: Player Death
+    audioClip: {fileID: 8300000, guid: c6eab4f2c88c96340af190dabfa5027f, type: 3}
+  - soundName: Lightning
     audioClip: {fileID: 8300000, guid: c6eab4f2c88c96340af190dabfa5027f, type: 3}
   backgroundSource: {fileID: 95273165}
   sfxSource: {fileID: 380570884}
@@ -198,7 +210,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &41396244
 RectTransform:
   m_ObjectHideFlags: 0

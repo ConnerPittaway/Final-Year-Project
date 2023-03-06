@@ -23,6 +23,11 @@ public class mainMenuManager : MonoBehaviour
         LevelButtons.SetActive(false);
     }
 
+    public void Start()
+    {
+        Audio.Instance.PlayMusic("Background Music Track 1");
+    }
+
     //Levels
     public void LevelsOpen()
     {

@@ -20,6 +20,7 @@ public class checkCode5 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Audio.Instance.PlayMusic("Background Music Track 3");
         levelManager.Instance.unlockedLevels[4] = true;
         //Start Tile
         Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
@@ -42,14 +43,6 @@ public class checkCode5 : MonoBehaviour
             tilemap.SetTile(tilePos, tileB);
             nextLevel.SetActive(true);
         }
-    }
-
-    Tile getTile(Tilemap tileMap, Vector3 pos)
-    {
-        Vector3Int tilePos = tileMap.WorldToCell(pos);
-        Tile tile = tilemap.GetTile<Tile>(tilePos);
-
-        return tile;
     }
 
     public void CheckInputs()

@@ -11869,8 +11869,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<color=#000080ff>bool</color> doorIsLocked =\n\n<color=purple>if</color>
-    (doorIsLocked == <color=blue></color>                )\n{\n    <color=yellow>lockDoor()</color>\n}\n<color=purple>else</color>\n{\n  
-    <color=yellow> unlockDoor()</color>\n}"
+    (doorIsLocked == <color=blue></color>                ) {\n    <color=yellow>lockDoor()</color>\n}\n<color=purple>else</color>
+    {\n   <color=yellow> unlockDoor()</color>\n}"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
@@ -12376,6 +12376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintScreen: {fileID: 1191629811}
   hintScreenButton: {fileID: 903644031}
+  victoryScreen: {fileID: 0}
   spellBook: {fileID: 1835259742}
   spellBookButton: {fileID: 466954898}
   spellDescription: {fileID: 159240770}
@@ -16464,6 +16465,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 9e28d303050f0914185a0c2f22bd2e78, type: 3}
   backgroundSource: {fileID: 222489047}
   sfxSource: {fileID: 1219128537}
+  currentlyPlaying: 
 --- !u!4 &2120636948
 Transform:
   m_ObjectHideFlags: 0

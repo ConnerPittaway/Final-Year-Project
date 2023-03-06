@@ -18,6 +18,10 @@ public class checkCode : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(Audio.Instance.currentlyPlaying != "Background Music Track 2")
+        {
+            Audio.Instance.PlayMusic("Background Music Track 2");
+        }
         //Start Tile
         Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
         tilemap.SetTile(tilePos, tileA);

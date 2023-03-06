@@ -9906,8 +9906,8 @@ MonoBehaviour:
   m_text: "<color=#000080ff>class</color> Player {\n<color=#000080ff>int</color>
     currentGold =\n<color=#000080ff>bool</color> hasSword =\n}\n\n<color=#000080ff>class</color>
     Coin {\n<color=#000080ff>int</color> value =\n}\n\n<color=#000080ff>int</color>
-    swordPrice =\n\n<color=purple>while</color> (player.HasSword == false)\n{\n   
-    doorIsLocked = true\n    <color=purple>if</color> (currentGold >= swordPrice)\n   
+    swordPrice =\n\n<color=purple>while</color> (player.HasSword == false) {\n   
+    doorIsLocked = true\n    <color=purple>if</color> (currentGold >= swordPrice)
     {\n       <color=yellow> buySword()</color>\n    }\n}"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
@@ -10613,6 +10613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintScreen: {fileID: 1252383333}
   hintScreenButton: {fileID: 141597975}
+  victoryScreen: {fileID: 0}
   spellBook: {fileID: 72698893}
   spellBookButton: {fileID: 439126434}
   spellDescription: {fileID: 1414784446}
