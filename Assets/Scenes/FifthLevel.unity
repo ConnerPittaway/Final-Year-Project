@@ -6754,8 +6754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266.7, y: -32.6}
-  m_SizeDelta: {x: 67.1038, y: 25.538}
+  m_AnchoredPosition: {x: -247.46202, y: -31.45501}
+  m_SizeDelta: {x: 72.0152, y: 25.538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &501290164
 MonoBehaviour:
@@ -7826,8 +7826,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266.7, y: 166.2}
-  m_SizeDelta: {x: 67.1038, y: 25.538}
+  m_AnchoredPosition: {x: -247.46202, y: 167.34499}
+  m_SizeDelta: {x: 72.0152, y: 25.538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &534476870
 MonoBehaviour:
@@ -18008,8 +18008,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266.7, y: 115.120026}
-  m_SizeDelta: {x: 67.1038, y: 25.538}
+  m_AnchoredPosition: {x: -247.46202, y: 116.265015}
+  m_SizeDelta: {x: 72.0152, y: 25.538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876414606
 MonoBehaviour:
@@ -24523,8 +24523,13 @@ MonoBehaviour:
   q8: {fileID: 1590957233}
   q9: {fileID: 786118305}
   q10: {fileID: 1629590464}
-  inputs: []
-  textFields: []
+  textFields:
+  - {fileID: 783386947}
+  - {fileID: 683998589}
+  - {fileID: 738379546}
+  - {fileID: 552154140}
+  - {fileID: 1963253045}
+  q10SubmitButton: {fileID: 1704001286}
 --- !u!1 &1314257705
 GameObject:
   m_ObjectHideFlags: 0
@@ -28120,8 +28125,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266.7, y: 67.8}
-  m_SizeDelta: {x: 67.1038, y: 25.538}
+  m_AnchoredPosition: {x: -247.46202, y: 68.94499}
+  m_SizeDelta: {x: 72.0152, y: 25.538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1552489335
 MonoBehaviour:
@@ -29276,7 +29281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.2177, y: 56.855}
+  m_AnchoredPosition: {x: 25.9, y: 56.855}
   m_SizeDelta: {x: 595.8806, y: 240.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630914499
@@ -29927,19 +29932,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1704001287}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1768156843}
-        m_TargetAssemblyTypeName: uiManager, Assembly-CSharp
-        m_MethodName: SpellBookOpen
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1704001287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34672,8 +34665,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266.7, y: 19.2}
-  m_SizeDelta: {x: 67.1038, y: 25.538}
+  m_AnchoredPosition: {x: -247.46202, y: 20.34499}
+  m_SizeDelta: {x: 72.0152, y: 25.538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1940524451
 MonoBehaviour:

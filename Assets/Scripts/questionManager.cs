@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 public class questionManager : MonoBehaviour
 {
     public GameObject q1, q2, q3, q4, q5, q6, q7, q8, q9, q10;
-    public List<TMP_InputField> inputs;
     public List<TMP_Text> textFields;
+    public Button q10SubmitButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,24 @@ public class questionManager : MonoBehaviour
     void Update()
     {
         //Control Submit Colour
+        if (textFields[0].text == "bool" &&
+            textFields[1].text == "int" &&
+            textFields[2].text == "string" &&
+            textFields[3].text == "char" &&
+            textFields[4].text == "float")
+        {
+            ColorBlock cb = q10SubmitButton.colors;
+            cb.pressedColor = Color.green;
+            cb.selectedColor = Color.green;
+            q10SubmitButton.colors = cb;
+        }
+        else
+        {
+            ColorBlock cb = q10SubmitButton.colors;
+            cb.pressedColor = Color.red;
+            cb.selectedColor = Color.red;
+            q10SubmitButton.colors = cb;
+        }
     }
 
     public void Question1Correct()
@@ -73,14 +92,29 @@ public class questionManager : MonoBehaviour
         q10.SetActive(true);
     }
 
-    public void Question10Correct()
+    public void Question10Check()
     {
-        // Input Fields
-        /* [0] - player2Opacity
-         * [1] - canActivate
+        // Text Fields
+        /* [0] - isOpen
+         * [1] - currentHealth
+         * [2] - name 
+         * [3] - letter
+         * [4] - currentOpacity
         */
-        q10.SetActive(false);
-        //q10.SetActive(true);
+
+        if(textFields[0].text == "bool" &&
+            textFields[1].text == "int" &&
+            textFields[2].text == "string" &&
+            textFields[3].text == "char" &&
+            textFields[4].text == "float")
+        {
+            q10.SetActive(false);
+            //q10.SetActive(true);
+        }
+        else
+        {
+            //Take Damage
+        }
     }
     public void wrongAnswer()
     {
