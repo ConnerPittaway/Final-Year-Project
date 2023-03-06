@@ -16,9 +16,11 @@ public class checkCode5 : MonoBehaviour
     public List<TMP_InputField> inputs;
     public List<TMP_Text> textFields;
     public Sprite[] doorSprites;
+    public sceneLoader sceneManager;
     // Start is called before the first frame update
     void Start()
     {
+        levelManager.Instance.unlockedLevels[4] = true;
         //Start Tile
         Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
         tilemap.SetTile(tilePos, tileA);
@@ -28,6 +30,12 @@ public class checkCode5 : MonoBehaviour
     void Update()
     {
         //Check For Death
+        if(int.Parse(inputs[2].text) == 0)
+        {
+            sceneManager.LoadScene0();
+        }
+
+        //Check For Door
         if(inputs[0].text == "true")
         {
             Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));

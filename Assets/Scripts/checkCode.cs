@@ -28,14 +28,6 @@ public class checkCode : MonoBehaviour
     {
     }
 
-    Tile getTile(Tilemap tileMap, Vector3 pos)
-    {
-        Vector3Int tilePos = tileMap.WorldToCell(pos);
-        Tile tile = tilemap.GetTile<Tile>(tilePos);
-
-        return tile;
-    }
-
     public void OpenDoor()
     {
         //Play Sound

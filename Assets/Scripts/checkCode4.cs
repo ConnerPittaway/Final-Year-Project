@@ -34,6 +34,7 @@ public class checkCode4 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        levelManager.Instance.unlockedLevels[3] = true;
         inputs[0].characterLimit = 3;
         //Start Tile
         Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));

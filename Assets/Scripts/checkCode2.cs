@@ -24,6 +24,7 @@ public class checkCode2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        levelManager.Instance.unlockedLevels[1] = true;
         //Start Tile
         Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
         tilemap.SetTile(tilePos, tileA);
@@ -39,27 +40,29 @@ public class checkCode2 : MonoBehaviour
     void Update()
     {
         int currentGold = int.Parse(inputs[0].text);
+        int coinValue = int.Parse(inputs[2].text);
         int swordPrice = int.Parse(inputs[3].text);
-
+        coinCollider.coinValue = coinValue;
         if ((currentGold >= swordPrice) && !hasSword)
         {
-            Audio.Instance.PlaySFX("Door Open");
-            Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
-            tilemap.SetTile(tilePos, tileB);
+            OpenDoor();
             hasSword = true;
-            nextLevel.SetActive(true);
             currentGold -= swordPrice;
             inputs[0].text = currentGold.ToString();
             inputs[4].text = "true";
         }
     }
 
-    Tile getTile(Tilemap tileMap, Vector3 pos)
+    public void OpenDoor()
     {
-        Vector3Int tilePos = tileMap.WorldToCell(pos);
-        Tile tile = tilemap.GetTile<Tile>(tilePos);
-
-        return tile;
+        //Play Sound
+        if (nextLevel.active == false)
+        {
+            //Audio.Instance.PlaySFX("Door Open");
+        }
+        Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
+        tilemap.SetTile(tilePos, tileB);
+        nextLevel.SetActive(true);
     }
 
     /* [0] - currentGold
@@ -71,7 +74,6 @@ public class checkCode2 : MonoBehaviour
     public void CheckInputs()
     {
         int currentGold = int.Parse(inputs[0].text);
-        int currentHealth = int.Parse(inputs[1].text);
         int coinValue = int.Parse(inputs[2].text);
         int swordPrice = int.Parse(inputs[3].text);
 
@@ -82,10 +84,8 @@ public class checkCode2 : MonoBehaviour
         //Results
         if(currentGold >= swordPrice && !hasSword)
         {
-            Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
-            tilemap.SetTile(tilePos, tileB);
+            OpenDoor();
             hasSword = true;
-            nextLevel.SetActive(true);
             currentGold -= swordPrice;
             inputs[0].text = currentGold.ToString();
             inputs[4].text = "true";

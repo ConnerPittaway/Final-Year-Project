@@ -5714,6 +5714,7 @@ MonoBehaviour:
   - {fileID: 139444285}
   textFields: []
   doorSprites: []
+  sceneManager: {fileID: 826126747}
   playerDead: 0
   dragonDead: 0
   running: 0
@@ -11027,6 +11028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintScreen: {fileID: 825130739}
   hintScreenButton: {fileID: 1548241697}
+  victoryScreen: {fileID: 0}
   spellBook: {fileID: 86508144}
   spellBookButton: {fileID: 247960163}
   spellDescription: {fileID: 1714082002}
@@ -15039,6 +15041,7 @@ MonoBehaviour:
   health: 10
   maxHealth: 10
   healthBar: {fileID: 1903037693}
+  sceneManager: {fileID: 826126747}
 --- !u!1 &2047178112
 GameObject:
   m_ObjectHideFlags: 0

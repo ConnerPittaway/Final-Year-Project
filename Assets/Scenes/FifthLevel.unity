@@ -14320,6 +14320,7 @@ MonoBehaviour:
   - {fileID: 424729383}
   textFields: []
   doorSprites: []
+  sceneManager: {fileID: 1902053565}
 --- !u!1 &670159420
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class checkCode3 : MonoBehaviour
     public List<TMP_InputField> inputs;
     public List<TMP_Text> textFields;
     public Sprite[] doorSprites;
+    public sceneLoader sceneManager;
 
     public bool playerDead, dragonDead, running;
 
@@ -31,6 +32,7 @@ public class checkCode3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        levelManager.Instance.unlockedLevels[2] = true;
         playerDead = false;
         dragonDead = false;
         running = false;
@@ -55,12 +57,16 @@ public class checkCode3 : MonoBehaviour
 
     }
 
-    Tile getTile(Tilemap tileMap, Vector3 pos)
+    public void OpenDoor()
     {
-        Vector3Int tilePos = tileMap.WorldToCell(pos);
-        Tile tile = tilemap.GetTile<Tile>(tilePos);
-
-        return tile;
+        //Play Sound
+        if (nextLevel.active == false)
+        {
+            Audio.Instance.PlaySFX("Door Open");
+        }
+        Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
+        tilemap.SetTile(tilePos, tileB);
+        nextLevel.SetActive(true);
     }
 
     /* [0] - playerHealth
@@ -98,16 +104,8 @@ public class checkCode3 : MonoBehaviour
 
         if(dragonHealth <= 0)
         {
-            //Play Sound
-            if (nextLevel.active == false)
-            {
-                Audio.Instance.PlaySFX("Door Open");
-            }
-
-            nextLevel.SetActive(true);
             dragonDead = true;
-            Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
-            tilemap.SetTile(tilePos, tileB);
+            OpenDoor();
         }
         StopCoroutine(dragonDamage());
         running = false;
@@ -194,9 +192,9 @@ public class checkCode3 : MonoBehaviour
             {
                 if (playerHealth <= 0)
                 {
-                    //Destroy()
                     (playerHealthbar.transform.gameObject).SetActive(false);
                     playerDead = true;
+                    sceneManager.LoadScene0();
                 }
                 else
                 {
@@ -230,11 +228,9 @@ public class checkCode3 : MonoBehaviour
                         Audio.Instance.PlaySFX("Door Open");
                     }
 
-                    nextLevel.SetActive(true);
                     (dragonHealthbar.transform.gameObject).SetActive(false);
                     dragonDead = true;
-                    Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
-                    tilemap.SetTile(tilePos, tileB);
+                    OpenDoor();
                 }
                 else
                 {
