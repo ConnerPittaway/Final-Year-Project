@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class questionManager : MonoBehaviour
 {
     public GameObject q1, q2, q3, q4, q5, q6, q7, q8, q9, q10;
-
+    public List<TMP_InputField> inputs;
+    public List<TMP_Text> textFields;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class questionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Control Submit Colour
     }
 
     public void Question1Correct()
@@ -74,6 +75,10 @@ public class questionManager : MonoBehaviour
 
     public void Question10Correct()
     {
+        // Input Fields
+        /* [0] - player2Opacity
+         * [1] - canActivate
+        */
         q10.SetActive(false);
         //q10.SetActive(true);
     }
