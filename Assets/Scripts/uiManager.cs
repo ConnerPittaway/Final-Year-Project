@@ -7,7 +7,7 @@ using TMPro;
 public class uiManager : MonoBehaviour
 {
     //Hint Screen
-    public GameObject hintScreen, hintScreenButton;
+    public GameObject hintScreen, hintScreenButton, victoryScreen;
 
     //Spellbook
     public GameObject spellBook, spellBookButton;
@@ -57,9 +57,15 @@ public class uiManager : MonoBehaviour
 
     public void HintScreenClose()
     {
-        Audio.Instance.PlaySFX("Click");
+        //Audio.Instance.PlaySFX("Click");
         hintScreen.SetActive(false);
         hintScreenButton.SetActive(true);
+    }
+
+    public void VictoryScreenClose()
+    {
+        //Audio.Instance.PlaySFX("Click");
+        victoryScreen.SetActive(false);
     }
 
     //SpellBook

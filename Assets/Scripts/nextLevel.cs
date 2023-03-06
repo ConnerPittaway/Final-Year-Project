@@ -37,6 +37,10 @@ public class nextLevel : MonoBehaviour
             {
                 SceneManager.LoadScene("FifthLevel");
             }
+            else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("FifthLevel"))
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
         }
     }
 }

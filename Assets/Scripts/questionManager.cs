@@ -7,7 +7,9 @@ public class questionManager : MonoBehaviour
 {
     public GameObject q1, q2, q3, q4, q5, q6, q7, q8, q9, q10;
     public List<TMP_Text> textFields;
+    public List<TMP_InputField> inputs;
     public Button q10SubmitButton;
+    public GameObject victoryScreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -102,14 +104,18 @@ public class questionManager : MonoBehaviour
          * [4] - currentOpacity
         */
 
+        //Input Fields
+        /* [0] - quizFinished
+        */
         if(textFields[0].text == "bool" &&
             textFields[1].text == "int" &&
             textFields[2].text == "string" &&
             textFields[3].text == "char" &&
             textFields[4].text == "float")
         {
-            q10.SetActive(false);
-            //q10.SetActive(true);
+            this.gameObject.SetActive(false);
+            inputs[0].text = "true";
+            victoryScreen.SetActive(true);
         }
         else
         {

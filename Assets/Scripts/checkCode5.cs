@@ -27,10 +27,13 @@ public class checkCode5 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Update If Finished
-
         //Check For Death
-
+        if(inputs[0].text == "true")
+        {
+            Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
+            tilemap.SetTile(tilePos, tileB);
+            nextLevel.SetActive(true);
+        }
     }
 
     Tile getTile(Tilemap tileMap, Vector3 pos)
@@ -44,11 +47,11 @@ public class checkCode5 : MonoBehaviour
     public void CheckInputs()
     {
         // Input Fields
-        /* [0] - player2Opacity
-         * [1] - canActivate
+        /* [0] - quizFinished
+         * [1] - quizStarted
+         * [2] - currentHealth
         */
         //Quiz Start
-
         if(inputs[1].text == "false")
         {
             inputs[1].text = "true";
