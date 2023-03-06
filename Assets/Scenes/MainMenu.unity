@@ -4792,6 +4792,12 @@ MonoBehaviour:
   LevelButtons: {fileID: 41396243}
   badgeManager: {fileID: 1598006364}
   badgesScreen: {fileID: 1598006362}
+  levels:
+  - {fileID: 120897691}
+  - {fileID: 992644246}
+  - {fileID: 1089497368}
+  - {fileID: 859621011}
+  - {fileID: 415917552}
 --- !u!1 &1839079923
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class mainMenuManager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class mainMenuManager : MonoBehaviour
     //Badges
     public BadgeManager badgeManager;
     public GameObject badgesScreen;
+
+    //Buttons
+    public List<Button> levels;
 
     //Main Menu
     public void MainMenuOpen()
@@ -23,6 +27,22 @@ public class mainMenuManager : MonoBehaviour
     public void LevelsOpen()
     {
         Audio.Instance.PlaySFX("Click");
+
+        int i = 0;
+        //Update Buttons
+        foreach(Button button in levels)
+        {
+            if(levelManager.Instance.unlockedLevels[i])
+            {
+                button.interactable = true;
+            }
+            else
+            {
+                button.interactable = false;
+            }
+            i++;
+        }
+
         mainMenuButtons.SetActive(false);
         LevelButtons.SetActive(true);
     }

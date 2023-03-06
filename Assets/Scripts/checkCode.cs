@@ -36,6 +36,25 @@ public class checkCode : MonoBehaviour
         return tile;
     }
 
+    public void OpenDoor()
+    {
+        //Play Sound
+        if (nextLevel.active == false)
+        {
+            Audio.Instance.PlaySFX("Door Open");
+        }
+        Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
+        tilemap.SetTile(tilePos, tileB);
+        nextLevel.SetActive(true);
+    }
+
+    public void CloseDoor()
+    {
+        Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
+        tilemap.SetTile(tilePos, tileA);
+        nextLevel.SetActive(false);
+    }
+
     public void CheckInputs()
     {
         for(int i = 0; i < textFields.Count; i++)
@@ -44,42 +63,20 @@ public class checkCode : MonoBehaviour
             if(textFields[0].text == textFields[1].text)
             {
                 Debug.Log("First");
-                Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
-                tilemap.SetTile(tilePos, tileA);
-                nextLevel.SetActive(false);
+                CloseDoor();
             }
             //Set door locked to false (default answer)
             else if(textFields[0].text == "false" && textFields[1].text == "true")
             {
                 Debug.Log("Second");
-
-                //Play Sound
-                if (nextLevel.active == false)
-                {
-                    Audio.Instance.PlaySFX("Door Open");
-                }
-
-                Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
-                tilemap.SetTile(tilePos, tileB);
-                nextLevel.SetActive(true);
+                OpenDoor();
                 Achievements.Instance.SetAchievementsLevel1("unlockDoor", true);
             }
             //Swap if statement (unique answer)
             else if(textFields[0].text == "true" && textFields[1].text == "false")
             {
-               // Tile tile = ScriptableObject.CreateInstance<Tile>();
-               // tile.sprite = doorSprites[0];
                 Debug.Log("Third");
-
-                //Play Sound
-                if(nextLevel.active == false)
-                {
-                    Audio.Instance.PlaySFX("Door Open");
-                }
-
-                Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
-                tilemap.SetTile(tilePos, tileB);
-                nextLevel.SetActive(true);
+                OpenDoor();
                 Achievements.Instance.SetAchievementsLevel1("changeBool", true);
 
             }
@@ -87,9 +84,7 @@ public class checkCode : MonoBehaviour
             else
             {
                 Debug.Log("Fourth");
-                Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
-                tilemap.SetTile(tilePos, tileA);
-                nextLevel.SetActive(false);
+                CloseDoor();
             }
         }
     }
