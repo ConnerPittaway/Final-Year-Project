@@ -2974,8 +2974,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -130, y: 0}
-  m_SizeDelta: {x: 528.0457, y: 357.1065}
+  m_AnchoredPosition: {x: -148.36, y: -4.7}
+  m_SizeDelta: {x: 402.77, y: 357.1065}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &589338705
 MonoBehaviour:
@@ -3031,7 +3031,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 4
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4165,16 +4165,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 13
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 1, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -4813,7 +4803,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 12
     m_Data: {fileID: 11400000, guid: 2b9f4025f78f7f843a82e18e9e26ab6a, type: 2}
-  - m_RefCount: 137
+  - m_RefCount: 136
     m_Data: {fileID: 11400000, guid: c0174e4fff856fa4793a9e14f4928837, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -4860,7 +4850,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 137
+  - m_RefCount: 136
     m_Data: {fileID: 261321297, guid: f15472e0666d044db9bfb88bc170ad9b, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -4881,7 +4871,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 233752587, guid: f15472e0666d044db9bfb88bc170ad9b, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 162
+  - m_RefCount: 161
     m_Data:
       e00: 1
       e01: 0
@@ -4900,7 +4890,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 162
+  - m_RefCount: 161
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -7243,8 +7233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -131.76212, y: -26.927}
-  m_SizeDelta: {x: 503.376, y: 303.25}
+  m_AnchoredPosition: {x: -143.5188, y: -26.927}
+  m_SizeDelta: {x: 412.4576, y: 303.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1026542986
 MonoBehaviour:
@@ -7308,8 +7298,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 17.1
+  m_fontSizeBase: 17.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11074,6 +11064,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 421ea00bf0ea126449f3b7695f0eaae8, type: 3}
   backgroundSource: {fileID: 2080201674}
   sfxSource: {fileID: 199354724}
+  currentlyPlaying: 
 --- !u!4 &1790656852
 Transform:
   m_ObjectHideFlags: 0
