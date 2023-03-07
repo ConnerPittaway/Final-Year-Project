@@ -7771,7 +7771,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 416.9, y: 197.8}
+  m_AnchoredPosition: {x: 423.74002, y: 197.8}
   m_SizeDelta: {x: 75.555, y: 25.537}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &790749905
@@ -11327,7 +11327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 416.9, y: 152}
+  m_AnchoredPosition: {x: 423.74002, y: 152}
   m_SizeDelta: {x: 75.555, y: 25.537}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1586554601
@@ -11845,7 +11845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 351.35995, y: -22.636219}
+  m_AnchoredPosition: {x: 358.2, y: -22.636219}
   m_SizeDelta: {x: 267.72, y: 460.4412}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1642450760
@@ -11869,7 +11869,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<color=#000080ff>bool</color> doorIsLocked =\n\n<color=purple>if</color>
-    (doorIsLocked == <color=blue></color>                ) {\n    <color=yellow>lockDoor()</color>\n}\n<color=purple>else</color>
+    (doorIsLocked == <color=blue></color>               ) {\n    <color=yellow>lockDoor()</color>\n}\n<color=purple>else</color>
     {\n   <color=yellow> unlockDoor()</color>\n}"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
