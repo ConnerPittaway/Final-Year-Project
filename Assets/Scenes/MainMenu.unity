@@ -384,6 +384,7 @@ GameObject:
   - component: {fileID: 55897932}
   - component: {fileID: 55897931}
   - component: {fileID: 55897930}
+  - component: {fileID: 55897933}
   m_Layer: 5
   m_Name: SpawnDupe
   m_TagString: Untagged
@@ -464,6 +465,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55897928}
   m_CullTransparentMesh: 1
+--- !u!114 &55897933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55897928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: Don't I Know You?
+  contentText: It seems there is an exact copy of myself looking at me
 --- !u!1 &65975765
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +491,7 @@ GameObject:
   - component: {fileID: 65975769}
   - component: {fileID: 65975768}
   - component: {fileID: 65975767}
+  - component: {fileID: 65975770}
   m_Layer: 5
   m_Name: ChangeCoinBadge
   m_TagString: Untagged
@@ -556,6 +572,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65975765}
   m_CullTransparentMesh: 1
+--- !u!114 &65975770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65975765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: Economy Crasher
+  contentText: Surely the price of gold won't affect anything
 --- !u!1 &81444692
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,6 +598,7 @@ GameObject:
   - component: {fileID: 81444696}
   - component: {fileID: 81444695}
   - component: {fileID: 81444694}
+  - component: {fileID: 81444697}
   m_Layer: 5
   m_Name: TurnIntoGhost
   m_TagString: Untagged
@@ -648,6 +679,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81444692}
   m_CullTransparentMesh: 1
+--- !u!114 &81444697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81444692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: Phase Shifter
+  contentText: Who needs doors when you can pass through walls
 --- !u!1 &94538368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,7 +1425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.91741, y: 350.38577}
+  m_AnchoredPosition: {x: 71.58418, y: 343.92706}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &235873411
@@ -1603,8 +1648,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentText: Unlocked when the door is unlocked using the boolean
   headerText: Door Unlocker
+  contentText: Alohomora!
 --- !u!1 &368197700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,6 +1662,7 @@ GameObject:
   - component: {fileID: 368197704}
   - component: {fileID: 368197703}
   - component: {fileID: 368197702}
+  - component: {fileID: 368197705}
   m_Layer: 5
   m_Name: ChangeBoolBadge
   m_TagString: Untagged
@@ -1697,6 +1743,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368197700}
   m_CullTransparentMesh: 1
+--- !u!114 &368197705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368197700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: Magic Alterer
+  contentText: Sometimes not all solutions are as obvious
 --- !u!1 &377557005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,6 +2541,7 @@ GameObject:
   - component: {fileID: 660877538}
   - component: {fileID: 660877537}
   - component: {fileID: 660877536}
+  - component: {fileID: 660877539}
   m_Layer: 5
   m_Name: ChangeSwordPrice
   m_TagString: Untagged
@@ -2561,6 +2622,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660877534}
   m_CullTransparentMesh: 1
+--- !u!114 &660877539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660877534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: Haggler
+  contentText: '"This sword is too expensive! I have a better price in mind"'
 --- !u!1 &676985203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,8 +2884,8 @@ MonoBehaviour:
   nerfDragon: 0
   spawnDupe: 0
   turnIntoGhost: 0
-  answerQ1: 0
-  answerQ2: 0
+  codeChampion: 0
+  codeDeity: 0
 --- !u!4 &726507489
 Transform:
   m_ObjectHideFlags: 0
@@ -2838,6 +2913,7 @@ GameObject:
   - component: {fileID: 741115711}
   - component: {fileID: 741115710}
   - component: {fileID: 741115709}
+  - component: {fileID: 741115712}
   m_Layer: 5
   m_Name: NerfDragon
   m_TagString: Untagged
@@ -2918,6 +2994,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741115707}
   m_CullTransparentMesh: 1
+--- !u!114 &741115712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741115707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: Declawer
+  contentText: A dragon with no claws is simply an overgrown lizard with wings
 --- !u!1 &825881017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4423,6 +4513,7 @@ GameObject:
   - component: {fileID: 1261694928}
   - component: {fileID: 1261694927}
   - component: {fileID: 1261694926}
+  - component: {fileID: 1261694929}
   m_Layer: 5
   m_Name: ChangePlayerGoldBadge
   m_TagString: Untagged
@@ -4503,6 +4594,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261694924}
   m_CullTransparentMesh: 1
+--- !u!114 &1261694929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261694924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: Counterfeiter
+  contentText: Where did all this money come from you ask? Well...
 --- !u!1 &1309532204
 GameObject:
   m_ObjectHideFlags: 0
@@ -4920,6 +5025,8 @@ MonoBehaviour:
   - {fileID: 741115710}
   - {fileID: 55897931}
   - {fileID: 81444695}
+  - {fileID: 1730656412}
+  - {fileID: 2074775465}
 --- !u!1 &1631579286
 GameObject:
   m_ObjectHideFlags: 0
@@ -5145,8 +5252,9 @@ GameObject:
   - component: {fileID: 1730656413}
   - component: {fileID: 1730656412}
   - component: {fileID: 1730656411}
+  - component: {fileID: 1730656414}
   m_Layer: 5
-  m_Name: ChangePlayerGoldBadge (5)
+  m_Name: GameComplete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5207,7 +5315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 33ae274aa946dfe459692bec7cecbdcc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 44bbc142568db2a4a9315dd2e04965e3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5225,6 +5333,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730656409}
   m_CullTransparentMesh: 1
+--- !u!114 &1730656414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730656409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: Code Champion
+  contentText: Congratulations on making it past the final test my Code Champion!
 --- !u!1 &1768156838
 GameObject:
   m_ObjectHideFlags: 0
@@ -9437,6 +9559,7 @@ GameObject:
   - component: {fileID: 1981088091}
   - component: {fileID: 1981088090}
   - component: {fileID: 1981088089}
+  - component: {fileID: 1981088092}
   m_Layer: 5
   m_Name: BuffPlayer
   m_TagString: Untagged
@@ -9517,6 +9640,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981088087}
   m_CullTransparentMesh: 1
+--- !u!114 &1981088092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981088087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: Empowerer
+  contentText: Empowered to fight against the dragon, maybe now you stand a chance!
 --- !u!1 &2002726466
 GameObject:
   m_ObjectHideFlags: 0
@@ -9574,8 +9711,9 @@ GameObject:
   - component: {fileID: 2074775466}
   - component: {fileID: 2074775465}
   - component: {fileID: 2074775464}
+  - component: {fileID: 2074775467}
   m_Layer: 5
-  m_Name: ChangePlayerGoldBadge (6)
+  m_Name: GameCompleteNoDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9636,7 +9774,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 33ae274aa946dfe459692bec7cecbdcc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87d4f93c6ec72ef4b96149231e09b831, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9654,6 +9792,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074775462}
   m_CullTransparentMesh: 1
+--- !u!114 &2074775467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074775462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headerText: Code Deity
+  contentText: Truly astounding, you completed the final trial without a single scratch
+    you are a Code Deity!
 --- !u!1 &2092164524
 GameObject:
   m_ObjectHideFlags: 0

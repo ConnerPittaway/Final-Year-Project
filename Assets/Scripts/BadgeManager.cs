@@ -31,6 +31,8 @@ public class BadgeManager : MonoBehaviour
             *badges[6] - nerfDragon
             *badges[7] - spawnDupe
             *badges[8] - turnIntoGhost
+            *badges[9] - codeChampion
+            *badges[10] - codeDeity
         */
 
         //Unlock Door
@@ -130,6 +132,28 @@ public class BadgeManager : MonoBehaviour
         else
         {
             AlterAlpha(true, badges[8]);
+        }
+
+        //Code Champion
+        if (!Achievements.Instance.achievements["codeChampion"])
+        {
+            AlterAlpha(false, badges[9]);
+            Debug.Log("Here");
+        }
+        else
+        {
+            AlterAlpha(true, badges[9]);
+        }
+
+        //Code Deity
+        if (!Achievements.Instance.achievements["codeDeity"])
+        {
+            AlterAlpha(false, badges[10]);
+            Debug.Log("Here");
+        }
+        else
+        {
+            AlterAlpha(true, badges[10]);
         }
     }
 

@@ -5,8 +5,11 @@ using UnityEngine.EventSystems;
 
 public class TooltipTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public string contentText;
     public string headerText;
+
+    [Multiline()]
+    public string contentText;
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         TooltipManager.Show(contentText, headerText);

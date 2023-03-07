@@ -20,7 +20,7 @@ public class Achievements : MonoBehaviour
     //Level 4
     public bool spawnDupe, turnIntoGhost;
     //Level 5
-    public bool answerQ1, answerQ2;
+    public bool codeChampion, codeDeity;
     private void Awake()
     {
         if(Instance == null)
@@ -43,7 +43,7 @@ public class Achievements : MonoBehaviour
             {"changeCurrentGold", false }, {"changeCoinValue", false}, {"changeSwordPrice", false},
             {"buffPlayer", false }, {"nerfDragon", false},
             {"spawnDupe", false }, {"turnIntoGhost", false},
-            {"answerQ1", false }, {"answerQ2", false}
+            {"codeChampion", false }, {"codeDeity", false}
         };
     }
 
@@ -111,6 +111,22 @@ public class Achievements : MonoBehaviour
             else if (achievementName == "turnIntoGhost")
             {
                 turnIntoGhost = true;
+            }
+        }
+    }
+
+    public void SetAchievementsLevel5(string achievementName, bool status)
+    {
+        if (achievements.ContainsKey(achievementName))
+        {
+            achievements[achievementName] = status;
+            if (achievementName == "codeChampion")
+            {
+                codeChampion = true;
+            }
+            else if (achievementName == "codeDeity")
+            {
+                codeDeity = true;
             }
         }
     }
