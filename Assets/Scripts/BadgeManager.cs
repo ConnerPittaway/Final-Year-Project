@@ -39,7 +39,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["unlockDoor"])
         {
             AlterAlpha(false, badges[0]);
-            Debug.Log("Here");
+            Debug.Log("unlockDoor");
         }
         else
         {
@@ -50,7 +50,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["changeBool"])
         {
             AlterAlpha(false, badges[1]);
-            Debug.Log("Here");
+            Debug.Log("changeBool");
         }
         else
         {
@@ -61,7 +61,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["changeCurrentGold"])
         {
             AlterAlpha(false, badges[2]);
-            Debug.Log("Here");
+            Debug.Log("changeCurrentGold");
         }
         else
         {
@@ -72,7 +72,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["changeCoinValue"])
         {
             AlterAlpha(false, badges[3]);
-            Debug.Log("Here");
+            Debug.Log("changeCoinValue");
         }
         else
         {
@@ -83,7 +83,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["changeSwordPrice"])
         {
             AlterAlpha(false, badges[4]);
-            Debug.Log("Here");
+            Debug.Log("changeSwordPrice");
         }
         else
         {
@@ -94,7 +94,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["buffPlayer"])
         {
             AlterAlpha(false, badges[5]);
-            Debug.Log("Here");
+            Debug.Log("buffPlayer");
         }
         else
         {
@@ -105,7 +105,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["nerfDragon"])
         {
             AlterAlpha(false, badges[6]);
-            Debug.Log("Here");
+            Debug.Log("nerfDragon");
         }
         else
         {
@@ -116,7 +116,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["spawnDupe"])
         {
             AlterAlpha(false, badges[7]);
-            Debug.Log("Here");
+            Debug.Log("spawnDupe");
         }
         else
         {
@@ -127,7 +127,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["turnIntoGhost"])
         {
             AlterAlpha(false, badges[8]);
-            Debug.Log("Here");
+            Debug.Log("turnIntoGhost");
         }
         else
         {
@@ -138,7 +138,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["codeChampion"])
         {
             AlterAlpha(false, badges[9]);
-            Debug.Log("Here");
+            Debug.Log("codeChampion");
         }
         else
         {
@@ -149,7 +149,7 @@ public class BadgeManager : MonoBehaviour
         if (!Achievements.Instance.achievements["codeDeity"])
         {
             AlterAlpha(false, badges[10]);
-            Debug.Log("Here");
+            Debug.Log("codeDeity");
         }
         else
         {

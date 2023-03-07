@@ -34,7 +34,7 @@ public class uiManager : MonoBehaviour
     //Badges
     public void BadgesScreenOpen()
     {
-        Audio.Instance.PlaySFX("Click");
+       // Audio.Instance.PlaySFX("Click");
         badgeManager.UpdateBadgeState();
         badgesScreen.SetActive(true);
         badgesButton.SetActive(false);
@@ -42,7 +42,7 @@ public class uiManager : MonoBehaviour
 
     public void BadgesScreenClose()
     {
-        Audio.Instance.PlaySFX("Click");
+      //  Audio.Instance.PlaySFX("Click");
         badgesScreen.SetActive(false);
         badgesButton.SetActive(true);
     }
