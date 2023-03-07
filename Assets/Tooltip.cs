@@ -12,11 +12,27 @@ public class Tooltip : MonoBehaviour
     public LayoutElement layoutElement;
     public int characterWrapLimit;
 
+    public RectTransform rectTransform;
+
+    private void Awake()
+    {
+        rectTransform = GetComponent<RectTransform>();
+    }
+
     private void Update()
     {
         int headerLength = header.text.Length;
         int contentLength = content.text.Length;
 
         layoutElement.enabled = Math.Max(header.preferredWidth, content.preferredWidth) >= layoutElement.preferredWidth ? true : false;
+
+        Vector2 mousePosition = Input.mousePosition;
+        transform.position = mousePosition;
+    }
+
+    public void SetToolTipText(string contentText, string headerText)
+    {
+        header.text = headerText;
+        content.text = contentText;
     }
 }
