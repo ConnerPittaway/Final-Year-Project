@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 [ExecuteInEditMode()]
 public class Tooltip : MonoBehaviour
@@ -16,13 +17,6 @@ public class Tooltip : MonoBehaviour
         int headerLength = header.text.Length;
         int contentLength = content.text.Length;
 
-        if(headerLength > characterWrapLimit || contentLength > characterWrapLimit)
-        {
-            layoutElement.enabled = false;
-        }
-        else
-        {
-            layoutElement.enabled = true;
-        }
+        layoutElement.enabled = Math.Max(header.preferredWidth, content.preferredWidth) >= layoutElement.preferredWidth ? true : false;
     }
 }
