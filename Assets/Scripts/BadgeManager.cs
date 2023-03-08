@@ -33,6 +33,11 @@ public class BadgeManager : MonoBehaviour
             *badges[8] - turnIntoGhost
             *badges[9] - codeChampion
             *badges[10] - codeDeity
+            *badges[11] - level1AllAchievements
+            *badges[12] - level2AllAchievements
+            *badges[13] - level3AllAchievements
+            *badges[14] - level4AllAchievements
+            *badges[15] - allAchievements
         */
 
         //Unlock Door
@@ -55,6 +60,18 @@ public class BadgeManager : MonoBehaviour
         else
         {
             AlterAlpha(true, badges[1]);
+        }
+
+        //Level 1 Achievements
+        if (Achievements.Instance.achievements["unlockDoor"] && Achievements.Instance.achievements["changeBool"])
+        {
+            Achievements.Instance.achievements["level1AllAchievements"] = true;
+            AlterAlpha(true, badges[11]);
+        }
+        else
+        {
+            AlterAlpha(false, badges[11]);
+            Debug.Log("level1AllAchievements");
         }
 
         //Player Gold
@@ -90,6 +107,18 @@ public class BadgeManager : MonoBehaviour
             AlterAlpha(true, badges[4]);
         }
 
+        //Level 2 Achievements
+        if (Achievements.Instance.achievements["changeCurrentGold"] && Achievements.Instance.achievements["changeCoinValue"] && Achievements.Instance.achievements["changeSwordPrice"])
+        {
+            Achievements.Instance.achievements["level2AllAchievements"] = true;
+            AlterAlpha(true, badges[12]);
+        }
+        else
+        {
+            AlterAlpha(false, badges[12]);
+            Debug.Log("level2AllAchievements");
+        }
+
         //Buff Player
         if (!Achievements.Instance.achievements["buffPlayer"])
         {
@@ -110,6 +139,18 @@ public class BadgeManager : MonoBehaviour
         else
         {
             AlterAlpha(true, badges[6]);
+        }
+
+        //Level 3 Achievements
+        if (Achievements.Instance.achievements["buffPlayer"] && Achievements.Instance.achievements["nerfDragon"])
+        {
+            Achievements.Instance.achievements["level3AllAchievements"] = true;
+            AlterAlpha(true, badges[13]);
+        }
+        else
+        {
+            AlterAlpha(false, badges[13]);
+            Debug.Log("level3AllAchievements");
         }
 
         //Spawn Dupe
@@ -134,6 +175,18 @@ public class BadgeManager : MonoBehaviour
             AlterAlpha(true, badges[8]);
         }
 
+        //Level 4 Achievements
+        if (Achievements.Instance.achievements["spawnDupe"] && Achievements.Instance.achievements["turnIntoGhost"])
+        {
+            Achievements.Instance.achievements["level4AllAchievements"] = true;
+            AlterAlpha(true, badges[14]);
+        }
+        else
+        {
+            AlterAlpha(false, badges[14]);
+            Debug.Log("level4AllAchievements");
+        }
+
         //Code Champion
         if (!Achievements.Instance.achievements["codeChampion"])
         {
@@ -154,6 +207,19 @@ public class BadgeManager : MonoBehaviour
         else
         {
             AlterAlpha(true, badges[10]);
+        }
+
+        //All achievements
+        if (Achievements.Instance.achievements["codeDeity"] && Achievements.Instance.achievements["codeChampion"] && Achievements.Instance.achievements["level1AllAchievements"]
+            && Achievements.Instance.achievements["level2AllAchievements"] && Achievements.Instance.achievements["level3AllAchievements"] && Achievements.Instance.achievements["level4AllAchievements"])
+        {
+            Achievements.Instance.achievements["allAchievements"] = true;
+            AlterAlpha(true, badges[15]);
+        }
+        else
+        {
+            AlterAlpha(false, badges[15]);
+            Debug.Log("allAchievements");
         }
     }
 

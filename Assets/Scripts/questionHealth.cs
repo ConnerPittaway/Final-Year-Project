@@ -37,4 +37,9 @@ public class questionHealth : MonoBehaviour
             deathScreen.SetActive(true);
         }
     }
+
+    public float getHealth()
+    {
+        return internalHealth;
+    }
 }

@@ -21,6 +21,9 @@ public class Achievements : MonoBehaviour
     public bool spawnDupe, turnIntoGhost;
     //Level 5
     public bool codeChampion, codeDeity;
+    //All achievements
+    public bool level1AllAchievements, level2AllAchievements, level3AllAchievements,
+                level4AllAchievements, allAchievements;
     private void Awake()
     {
         if(Instance == null)
@@ -43,7 +46,10 @@ public class Achievements : MonoBehaviour
             {"changeCurrentGold", false }, {"changeCoinValue", false}, {"changeSwordPrice", false},
             {"buffPlayer", false }, {"nerfDragon", false},
             {"spawnDupe", false }, {"turnIntoGhost", false},
-            {"codeChampion", false }, {"codeDeity", false}
+            {"codeChampion", false }, {"codeDeity", false},
+            {"level1AllAchievements", false }, {"level2AllAchievements", false },
+            {"level3AllAchievements", false }, {"level4AllAchievements", false },
+            {"allAchievements", false }
         };
     }
 

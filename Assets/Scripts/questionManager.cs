@@ -117,6 +117,12 @@ public class questionManager : MonoBehaviour
             this.gameObject.SetActive(false);
             inputs[0].text = "true";
             victoryScreen.SetActive(true);
+            Achievements.Instance.achievements["codeChampion"] = true;
+
+            if(health.getHealth() == 10.0f)
+            {
+                Achievements.Instance.achievements["codeDeity"] = true;
+            }
         }
         else
         {
