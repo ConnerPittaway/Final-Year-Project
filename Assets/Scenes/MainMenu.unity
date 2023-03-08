@@ -1702,8 +1702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headerText: Phase Shifter
-  contentText: Who needs doors when you can pass through walls
+  headerText: The For Spell Completionist
+  contentText: You achieved all the level 3 achievements!
 --- !u!114 &355301580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1739,7 +1739,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 70dd058d936e55e408f406f47f69e9d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c74f372340c5d746a3e60883678715c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2124,8 +2124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headerText: Phase Shifter
-  contentText: Who needs doors when you can pass through walls
+  headerText: The If Spell Completionist
+  contentText: You achieved all the level 1 achievements!
 --- !u!114 &412100269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2161,7 +2161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 70dd058d936e55e408f406f47f69e9d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce59c4415617c6e42b872da645d6082b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2483,8 +2483,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headerText: Phase Shifter
-  contentText: Who needs doors when you can pass through walls
+  headerText: The While Spell Completionist
+  contentText: You achieved all the level 2 achievements!
 --- !u!114 &557505313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2520,7 +2520,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 70dd058d936e55e408f406f47f69e9d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d4a950ff8b273d41836cd598af4c7e7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4001,9 +4001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headerText: Code Deity
-  contentText: Truly astounding, you completed the final trial without a single scratch
-    you are a Code Deity!
+  headerText: Code Completionist
+  contentText: You have achieved all achievements! Well done!
 --- !u!114 &939532924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5397,7 +5396,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1598006363
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10195,8 +10194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44d7442fe611324b914d2c372734a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headerText: Phase Shifter
-  contentText: Who needs doors when you can pass through walls
+  headerText: The Class Completionist
+  contentText: You achieved all the level 4 achievements!
 --- !u!114 &2044451481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10232,7 +10231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 70dd058d936e55e408f406f47f69e9d5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b453c120a1165c47bd95ab749930dde, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
