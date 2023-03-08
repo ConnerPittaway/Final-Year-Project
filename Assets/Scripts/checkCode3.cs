@@ -7,7 +7,7 @@ using TMPro;
 
 public class checkCode3 : MonoBehaviour
 {
-    public GameObject nextLevel;
+    public GameObject nextLevel, deathScreen;
     public Tile tile;
     public Tilemap tilemap;
     public TileBase tileA;
@@ -198,7 +198,8 @@ public class checkCode3 : MonoBehaviour
                 {
                     (playerHealthbar.transform.gameObject).SetActive(false);
                     playerDead = true;
-                    sceneManager.LoadScene0();
+                    deathScreen.SetActive(true);
+                    //sceneManager.LoadScene0();
                 }
                 else
                 {
