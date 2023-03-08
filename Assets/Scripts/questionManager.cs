@@ -10,6 +10,7 @@ public class questionManager : MonoBehaviour
     public List<TMP_InputField> inputs;
     public Button q10SubmitButton;
     public GameObject victoryScreen;
+    public questionHealth health;
     // Start is called before the first frame update
     void Start()
     {
@@ -120,10 +121,12 @@ public class questionManager : MonoBehaviour
         else
         {
             //Take Damage
+            health.takeDamage(5.0f);
         }
     }
     public void wrongAnswer()
     {
         //Minus health
+        health.takeDamage(5.0f);
     }
 }
