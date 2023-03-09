@@ -8826,6 +8826,9 @@ MonoBehaviour:
     to unlock the door!
 
 
+    Control your duplicate using the arrow keys, only the
+    true version of you will be able to exit the level and not your clone!
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
@@ -8853,8 +8856,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 16.6
+  m_fontSizeBase: 16.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
