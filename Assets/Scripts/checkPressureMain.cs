@@ -11,6 +11,11 @@ public class checkPressureMain : MonoBehaviour
         isActive = false;
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        isActive = true;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isActive = true;
