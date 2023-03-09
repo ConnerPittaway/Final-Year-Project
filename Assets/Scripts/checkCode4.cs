@@ -55,7 +55,18 @@ public class checkCode4 : MonoBehaviour
         Debug.Log(currentColor.a);
         player2.GetComponent<SpriteRenderer>().color = currentColor;
 
-        if(currentColor.a <= 0.5 && Achievements.Instance.achievements["turnIntoGhost"] == false)
+        if (currentColor.a <= 0.5)
+        {
+            inputs[1].text = "false";
+            inputs[2].text = "true";
+        }
+        else
+        {
+            inputs[1].text = "true";
+            inputs[2].text = "false";
+        }
+
+        if (currentColor.a <= 0.5 && Achievements.Instance.achievements["turnIntoGhost"] == false)
         {
             Achievements.Instance.achievements["turnIntoGhost"] = true;
             Debug.Log("Achievement");
