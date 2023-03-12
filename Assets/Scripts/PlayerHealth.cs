@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             (gameObject).SetActive(false);
+            Audio.Instance.PlaySFX("Player Death");
             deathScreen.SetActive(true);
             //sceneManager.LoadScene0();
         }

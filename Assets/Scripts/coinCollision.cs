@@ -36,6 +36,7 @@ public class coinCollision : MonoBehaviour
         if(collision.gameObject.CompareTag("Coin"))
         {
             increaseCoins();
+            Audio.Instance.PlaySFX("Coin");
             Destroy(collision.gameObject);
         }
     }

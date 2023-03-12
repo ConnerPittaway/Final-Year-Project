@@ -198,6 +198,7 @@ public class checkCode3 : MonoBehaviour
                 {
                     (playerHealthbar.transform.gameObject).SetActive(false);
                     playerDead = true;
+                    Audio.Instance.PlaySFX("Player Death");
                     deathScreen2.SetActive(true);
                     //sceneManager.LoadScene0();
                 }
@@ -230,6 +231,7 @@ public class checkCode3 : MonoBehaviour
                     //Play Sound
                     if (nextLevel.active == false)
                     {
+                        Audio.Instance.PlaySFX("Dragon Death");
                         Audio.Instance.PlaySFX("Door Open");
                     }
 

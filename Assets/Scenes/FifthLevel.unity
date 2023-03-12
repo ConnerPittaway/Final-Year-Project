@@ -2956,6 +2956,7 @@ MonoBehaviour:
   slider: {fileID: 196772556}
   low: {r: 1, g: 0, b: 0, a: 1}
   high: {r: 0, g: 1, b: 0, a: 1}
+  internalHealth: 10
   deathScreen: {fileID: 966455850}
 --- !u!1 &198426393
 GameObject:
@@ -15584,6 +15585,7 @@ MonoBehaviour:
   textFields: []
   doorSprites: []
   sceneManager: {fileID: 1902053565}
+  questionHealth: {fileID: 196772557}
 --- !u!1 &670159420
 GameObject:
   m_ObjectHideFlags: 0

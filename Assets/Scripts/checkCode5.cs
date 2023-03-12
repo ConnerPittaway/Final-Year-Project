@@ -17,6 +17,7 @@ public class checkCode5 : MonoBehaviour
     public List<TMP_Text> textFields;
     public Sprite[] doorSprites;
     public sceneLoader sceneManager;
+    public questionHealth questionHealth;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +31,7 @@ public class checkCode5 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Check For Death
-        if(int.Parse(inputs[2].text) == 0)
-        {
-            sceneManager.LoadScene0();
-        }
+        inputs[2].text = ((int)questionHealth.internalHealth).ToString();
 
         //Check For Door
         if(inputs[0].text == "true")

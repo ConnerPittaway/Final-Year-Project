@@ -10,7 +10,7 @@ public class questionHealth : MonoBehaviour
     public Color high;
 
     //Health Stuff
-    private float internalHealth = 10.0f;
+    public float internalHealth = 10.0f;
     private float internalMaxHealth = 10.0f;
 
     public GameObject deathScreen;
@@ -31,9 +31,9 @@ public class questionHealth : MonoBehaviour
     {
         internalHealth -= damage;
         SetHealth(internalHealth, internalMaxHealth);
-
         if (internalHealth <= 0)
         {
+            Audio.Instance.PlaySFX("Player Death");
             deathScreen.SetActive(true);
         }
     }

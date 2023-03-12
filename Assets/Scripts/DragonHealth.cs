@@ -22,6 +22,7 @@ public class DragonHealth : MonoBehaviour
 
         if(health <= 0)
         {
+            Audio.Instance.PlaySFX("Dragon Death");
             (gameObject).SetActive(false);
         }
     }
