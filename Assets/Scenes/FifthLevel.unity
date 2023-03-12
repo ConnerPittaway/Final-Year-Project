@@ -40237,7 +40237,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '<u>Question 6</u>
 
-    What is the value of the integer j?'
+    What is the value of the integer number?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
@@ -40452,8 +40452,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<color=#000080ff>int</color> j = 0\n<color=purple>for</color> (int i =
-    0; i < 4; i++) {\n    j += 1\n}"
+  m_text: "<color=#000080ff>int</color> number = 0\n<color=purple>for</color> (int
+    i = 0; i < 4; i++) {\n    number += 1\n}"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
