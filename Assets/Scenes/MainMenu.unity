@@ -176,6 +176,8 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: b9fe1a25dc9a81e4fa2b81757816024f, type: 3}
   - soundName: Lightning
     audioClip: {fileID: 8300000, guid: c1675833cae5a964191bac4d30733665, type: 3}
+  - soundName: Correct
+    audioClip: {fileID: 8300000, guid: 5c65376a03eb939409047a906f251867, type: 3}
   backgroundSource: {fileID: 95273165}
   sfxSource: {fileID: 380570884}
   currentlyPlaying: 
