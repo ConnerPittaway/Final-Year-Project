@@ -19,6 +19,9 @@ public class uiManager : MonoBehaviour
     public GameObject badgesScreen, badgesButton;
     public BadgeManager badgeManager;
 
+    //Unlocked Badges
+    public TMP_Text unlockedBadges;
+    private int unlockedBadgeNumber;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +31,8 @@ public class uiManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        unlockedBadgeNumber = Achievements.Instance.ReturnUnlockedBadgeNumber();
+        Debug.Log(unlockedBadgeNumber);
     }
 
     //Badges

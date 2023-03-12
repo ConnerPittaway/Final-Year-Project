@@ -150,6 +150,16 @@ public class Achievements : MonoBehaviour
         }
     }
 
+    public int ReturnUnlockedBadgeNumber()
+    {
+        int unlockedBadges = 0;
+        foreach (var value in achievements.Values)
+        {
+            if (value)
+                unlockedBadges++;
+        }
+        return unlockedBadges;
+    }
     // Update is called once per frame
     void Update()
     {
