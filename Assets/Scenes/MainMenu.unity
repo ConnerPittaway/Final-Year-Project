@@ -169,13 +169,13 @@ MonoBehaviour:
   - soundName: Next Level
     audioClip: {fileID: 8300000, guid: c6eab4f2c88c96340af190dabfa5027f, type: 3}
   - soundName: Coin
-    audioClip: {fileID: 8300000, guid: c6eab4f2c88c96340af190dabfa5027f, type: 3}
+    audioClip: {fileID: 8300000, guid: d77a62266763cf34d8de3352ee5fb46e, type: 3}
   - soundName: Dragon Death
-    audioClip: {fileID: 8300000, guid: c6eab4f2c88c96340af190dabfa5027f, type: 3}
+    audioClip: {fileID: 8300000, guid: 8e88b1dde7b261f4daa1f57276736389, type: 3}
   - soundName: Player Death
-    audioClip: {fileID: 8300000, guid: c6eab4f2c88c96340af190dabfa5027f, type: 3}
+    audioClip: {fileID: 8300000, guid: b9fe1a25dc9a81e4fa2b81757816024f, type: 3}
   - soundName: Lightning
-    audioClip: {fileID: 8300000, guid: c6eab4f2c88c96340af190dabfa5027f, type: 3}
+    audioClip: {fileID: 8300000, guid: c1675833cae5a964191bac4d30733665, type: 3}
   backgroundSource: {fileID: 95273165}
   sfxSource: {fileID: 380570884}
   currentlyPlaying: 

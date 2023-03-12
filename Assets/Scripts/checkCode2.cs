@@ -62,7 +62,7 @@ public class checkCode2 : MonoBehaviour
         //Play Sound
         if (nextLevel.active == false)
         {
-            //Audio.Instance.PlaySFX("Door Open");
+            Audio.Instance.PlaySFX("Door Open");
         }
         Vector3Int tilePos = tilemap.WorldToCell(new Vector3(-0.39f, 0.73f, 0));
         tilemap.SetTile(tilePos, tileB);
