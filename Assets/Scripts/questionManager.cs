@@ -43,54 +43,63 @@ public class questionManager : MonoBehaviour
 
     public void Question1Correct()
     {
+        Audio.Instance.PlaySFX("Correct");
         q1.SetActive(false);
         q2.SetActive(true);
     }
 
     public void Question2Correct()
     {
+        Audio.Instance.PlaySFX("Correct");
         q2.SetActive(false);
         q3.SetActive(true);
     }
 
     public void Question3Correct()
     {
+        Audio.Instance.PlaySFX("Correct");
         q3.SetActive(false);
         q4.SetActive(true);
     }
 
     public void Question4Correct()
     {
+        Audio.Instance.PlaySFX("Correct");
         q4.SetActive(false);
         q5.SetActive(true);
     }
 
     public void Question5Correct()
     {
+        Audio.Instance.PlaySFX("Correct");
         q5.SetActive(false);
         q6.SetActive(true);
     }
 
     public void Question6Correct()
     {
+        Audio.Instance.PlaySFX("Correct");
         q6.SetActive(false);
         q7.SetActive(true);
     }
 
     public void Question7Correct()
     {
+        Audio.Instance.PlaySFX("Correct");
         q7.SetActive(false);
         q8.SetActive(true);
     }
 
     public void Question8Correct()
     {
+        Audio.Instance.PlaySFX("Correct");
         q8.SetActive(false);
         q9.SetActive(true);
     }
 
     public void Question9Correct()
     {
+        Audio.Instance.PlaySFX("Correct");
         q9.SetActive(false);
         q10.SetActive(true);
     }
@@ -114,6 +123,7 @@ public class questionManager : MonoBehaviour
             textFields[3].text == "char" &&
             textFields[4].text == "float")
         {
+            Audio.Instance.PlaySFX("Correct");
             this.gameObject.SetActive(false);
             inputs[0].text = "true";
             victoryScreen.SetActive(true);

@@ -29,6 +29,7 @@ public class questionHealth : MonoBehaviour
 
     public void takeDamage(float damage)
     {
+        Audio.Instance.PlaySFX("Lightning");
         internalHealth -= damage;
         SetHealth(internalHealth, internalMaxHealth);
         if (internalHealth <= 0)
