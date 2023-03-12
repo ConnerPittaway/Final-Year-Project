@@ -63,9 +63,9 @@ public class BadgeManager : MonoBehaviour
         }
 
         //Level 1 Achievements
-        if (Achievements.Instance.achievements["unlockDoor"] && Achievements.Instance.achievements["changeBool"])
+        if (Achievements.Instance.achievements["level1AllAchievements"])
         {
-            Achievements.Instance.achievements["level1AllAchievements"] = true;
+            //Achievements.Instance.achievements["level1AllAchievements"] = true;
             AlterAlpha(true, badges[11]);
         }
         else
@@ -108,9 +108,8 @@ public class BadgeManager : MonoBehaviour
         }
 
         //Level 2 Achievements
-        if (Achievements.Instance.achievements["changeCurrentGold"] && Achievements.Instance.achievements["changeCoinValue"] && Achievements.Instance.achievements["changeSwordPrice"])
+        if (Achievements.Instance.achievements["level2AllAchievements"])
         {
-            Achievements.Instance.achievements["level2AllAchievements"] = true;
             AlterAlpha(true, badges[12]);
         }
         else
@@ -142,9 +141,8 @@ public class BadgeManager : MonoBehaviour
         }
 
         //Level 3 Achievements
-        if (Achievements.Instance.achievements["buffPlayer"] && Achievements.Instance.achievements["nerfDragon"])
+        if (Achievements.Instance.achievements["level3AllAchievements"])
         {
-            Achievements.Instance.achievements["level3AllAchievements"] = true;
             AlterAlpha(true, badges[13]);
         }
         else
@@ -176,9 +174,8 @@ public class BadgeManager : MonoBehaviour
         }
 
         //Level 4 Achievements
-        if (Achievements.Instance.achievements["spawnDupe"] && Achievements.Instance.achievements["turnIntoGhost"])
+        if (Achievements.Instance.achievements["level4AllAchievements"])
         {
-            Achievements.Instance.achievements["level4AllAchievements"] = true;
             AlterAlpha(true, badges[14]);
         }
         else
@@ -210,10 +207,8 @@ public class BadgeManager : MonoBehaviour
         }
 
         //All achievements
-        if (Achievements.Instance.achievements["codeDeity"] && Achievements.Instance.achievements["codeChampion"] && Achievements.Instance.achievements["level1AllAchievements"]
-            && Achievements.Instance.achievements["level2AllAchievements"] && Achievements.Instance.achievements["level3AllAchievements"] && Achievements.Instance.achievements["level4AllAchievements"])
+        if (Achievements.Instance.achievements["allAchievements"])
         {
-            Achievements.Instance.achievements["allAchievements"] = true;
             AlterAlpha(true, badges[15]);
         }
         else

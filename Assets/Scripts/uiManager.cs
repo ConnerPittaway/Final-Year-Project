@@ -32,6 +32,7 @@ public class uiManager : MonoBehaviour
     void Update()
     {
         unlockedBadgeNumber = Achievements.Instance.ReturnUnlockedBadgeNumber();
+        unlockedBadges.text = "Unlocked Badges: " + unlockedBadgeNumber.ToString() + "/" + Achievements.Instance.achievements.Count.ToString();
         Debug.Log(unlockedBadgeNumber);
     }
 

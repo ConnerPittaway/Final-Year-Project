@@ -163,6 +163,37 @@ public class Achievements : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Check for all achievements
+
+        //Level 1 Achievements
+        if (achievements["unlockDoor"] && achievements["changeBool"])
+        {
+            achievements["level1AllAchievements"] = true;
+        }
+
+        //Level 2 Achievements
+        if (achievements["changeCurrentGold"] && achievements["changeCoinValue"] && achievements["changeSwordPrice"])
+        {
+            achievements["level2AllAchievements"] = true;
+        }
+
+        //Level 3 Achievements
+        if (achievements["buffPlayer"] && achievements["nerfDragon"])
+        {
+            achievements["level3AllAchievements"] = true;
+        }
+
+        //Level 4 Achievements
+        if (achievements["spawnDupe"] && achievements["turnIntoGhost"])
+        {
+            achievements["level4AllAchievements"] = true;
+        }
+
+        //All achievements
+        if (achievements["codeDeity"] && achievements["codeChampion"] && achievements["level1AllAchievements"]
+            && achievements["level2AllAchievements"] && achievements["level3AllAchievements"] && achievements["level4AllAchievements"])
+        {
+            achievements["allAchievements"] = true;
+        }
     }
 }
