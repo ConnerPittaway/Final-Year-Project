@@ -106,7 +106,7 @@ public class checkCode4 : MonoBehaviour
         }
 
         string newPlayer = textFields[1].text;
-        if(spawnPlayer2 && newPlayer == "Player1")
+        if(spawnPlayer2 && newPlayer == "MainPlayer")
         {
             Debug.Log("Player1");
             player1Dupe.SetActive(true);
@@ -117,7 +117,7 @@ public class checkCode4 : MonoBehaviour
                 Debug.Log("Achievement");
             }
         }
-        else if(spawnPlayer2 && newPlayer == "Player2")
+        else if(spawnPlayer2 && newPlayer == "SecondPlayer")
         {
             Debug.Log("Player2");
             player1Dupe.SetActive(false);

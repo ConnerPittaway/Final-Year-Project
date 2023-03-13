@@ -8,6 +8,7 @@ using TMPro;
 public class checkCode2 : MonoBehaviour
 {
     public GameObject nextLevel;
+    public GameObject items;
     public Tile tile;
     public Tilemap tilemap;
     public TileBase tileA;
@@ -54,6 +55,7 @@ public class checkCode2 : MonoBehaviour
             currentGold -= swordPrice;
             inputs[0].text = currentGold.ToString();
             inputs[4].text = "true";
+            items.SetActive(false);
         }
     }
 
@@ -93,6 +95,7 @@ public class checkCode2 : MonoBehaviour
             currentGold -= swordPrice;
             inputs[0].text = currentGold.ToString();
             inputs[4].text = "true";
+            items.SetActive(false);
         }
     }
 

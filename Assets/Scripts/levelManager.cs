@@ -22,7 +22,7 @@ public class levelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        unlockedLevels = new List<bool> { true, false, false, false, false };
+        unlockedLevels = new List<bool> { true, false, false, true, false };
     }
 
     // Update is called once per frame
