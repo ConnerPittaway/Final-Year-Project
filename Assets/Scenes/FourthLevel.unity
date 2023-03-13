@@ -12875,14 +12875,16 @@ MonoBehaviour:
     spawnSecondPlayer = \n}\n<color=#000080ff>class</color> SecondPlayer {\n<color=#000080ff>int</color>
     opacity =\n<color=#000080ff>bool</color> canActivate =\n<color=#000080ff>bool</color>
     ghost =\n}\n\nplayer1 = <color=#000080ff>new</color> <color=#000080ff>MainPlayer</color>\n<color=purple>if</color>(player1.spawnSecondPlayer
-    == true) {\n    player2 = <color=#000080ff>new</color> \n}  \n\n<color=purple>while</color>
-    (doorisLocked == true && player2 is <color=#000080ff>SecondPlayer</color>) {\n   
-    <color=purple>if</color> (player2.opacity <= 50) {\n        player2.ghost = true\n       
-    player2.canActivate = false\n    }\n    <color=purple>else</color> {\n       
-    player2.ghost = false\n        player2.canActivate = true\n    }\n\n    <color=purple>if
-    </color>(<color=yellow>OnPlate</color>(<color=grey>player1</color>) == true &&
-    \n        <color=yellow>OnPlate</color>(<color=grey>player2</color>) == true)
-    {\n             <color=yellow>unlockDoor()</color>\n         }\n}\n"
+    == <color=blue>true</color>) {\n    player2 = <color=#000080ff>new</color> \n} 
+    \n\n<color=purple>while</color> (doorisLocked == <color=blue>true</color> &&
+    player2 is <color=#000080ff>SecondPlayer</color>) {\n    <color=purple>if</color>
+    (player2.opacity <= 50) {\n        player2.ghost = <color=blue>true</color>\n       
+    player2.canActivate = <color=blue>false</color>\n    }\n    <color=purple>else</color>
+    {\n        player2.ghost = <color=blue>false</color>\n        player2.canActivate
+    = <color=blue>true</color>\n    }\n\n    <color=purple>if </color>(<color=yellow>OnPlate</color>(<color=grey>player1</color>)
+    == <color=blue>true</color> && \n        <color=yellow>OnPlate</color>(<color=grey>player2</color>)
+    == <color=blue>true</color>) {\n             <color=yellow>unlockDoor()</color>\n        
+    }\n}\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
