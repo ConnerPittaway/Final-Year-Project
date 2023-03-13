@@ -1924,21 +1924,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<color=#000080ff>class</color> Player {
-
-    <color=#000080ff>    int</color>
-    health = 10
-
-    }
-
-    Player player = new Player
-
-    player.health = 20
-
-    Player
-    player2 = new Player
-
-'
+  m_text: "<color=#000080ff>class</color> Player {\n<color=#000080ff>    int</color>
+    health = 10\n}\n<color=#000080ff>Player</color> firstPlayer = new <color=#000080ff>Player</color> 
+    \nfirstPlayer.health = 20\n<color=#000080ff>Player</color> secondPlayer = new
+    <color=#000080ff>Player</color>  \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
@@ -29043,7 +29032,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '<u>Question 8</u>
 
-    How much health does player 2 have?'
+    How much health does the second player have?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
