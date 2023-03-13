@@ -39,7 +39,7 @@ public class uiManager : MonoBehaviour
     //Badges
     public void BadgesScreenOpen()
     {
-       // Audio.Instance.PlaySFX("Click");
+        Audio.Instance.PlaySFX("Click");
         badgeManager.UpdateBadgeState();
         badgesScreen.SetActive(true);
         badgesButton.SetActive(false);
@@ -47,7 +47,7 @@ public class uiManager : MonoBehaviour
 
     public void BadgesScreenClose()
     {
-      //  Audio.Instance.PlaySFX("Click");
+        Audio.Instance.PlaySFX("Click");
         badgesScreen.SetActive(false);
         badgesButton.SetActive(true);
     }
@@ -62,14 +62,14 @@ public class uiManager : MonoBehaviour
 
     public void HintScreenClose()
     {
-        //Audio.Instance.PlaySFX("Click");
+        Audio.Instance.PlaySFX("Click");
         hintScreen.SetActive(false);
         hintScreenButton.SetActive(true);
     }
 
     public void VictoryScreenClose()
     {
-        //Audio.Instance.PlaySFX("Click");
+        Audio.Instance.PlaySFX("Click");
         victoryScreen.SetActive(false);
     }
 

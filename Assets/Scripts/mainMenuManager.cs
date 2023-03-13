@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class mainMenuManager : MonoBehaviour
 {
     //UI
-    public GameObject mainMenuButtons, LevelButtons;
+    public GameObject mainMenuButtons, LevelButtons, volumeChange;
 
     //Badges
     public BadgeManager badgeManager;
@@ -21,6 +21,7 @@ public class mainMenuManager : MonoBehaviour
         Audio.Instance.PlaySFX("Click");
         mainMenuButtons.SetActive(true);
         LevelButtons.SetActive(false);
+        volumeChange.SetActive(false);
     }
 
     public void Start()
@@ -50,6 +51,14 @@ public class mainMenuManager : MonoBehaviour
 
         mainMenuButtons.SetActive(false);
         LevelButtons.SetActive(true);
+    }
+
+    //Volume
+    public void VolumeScreenOpen()
+    {
+        Audio.Instance.PlaySFX("Click");
+        volumeChange.SetActive(true);
+        mainMenuButtons.SetActive(false);
     }
 
     //Badges
