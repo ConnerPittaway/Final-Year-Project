@@ -142,9 +142,10 @@ public class uiManager : MonoBehaviour
     public void OnClassStatement()
     {
         Audio.Instance.PlaySFX("Click");
-        spellDescription.fontSize = 14.0f;
-        spellDescription.text = "A <color=#000080ff>class</color> is a user defined data type, it is used as a container for <b>attributes</b> (variables) and <b>methods</b> (functions) that belong to it. Objects can be <b>created/instantiated</b> from a <color=#000080ff>class</color> and can also be referred to as instances. Attributes and methods "
-            + "can be declared as <b>public</b> meaning they are visible outside of the <color=#000080ff>class</color> or <b>private</b> meaning they can only be accessed within the <color=#000080ff>class</color> - for simplicity <b>all classes in the game are public</b> by default but these are usually private unless declared as public."
+        spellDescription.fontSize = 13.0f;
+        spellDescription.text = "A <color=#000080ff>class</color> is a user defined data type, it is used as a container for <b>attributes</b> (variables) and <b>methods</b> (functions) that belong to it. Objects can be <b>created/instantiated</b> from a <color=#000080ff>class</color> and can also be referred to as instances, the process of <b>creating new objects is called instantiation.</b>"
+            + " <b>Changes to variables on a specific object usually only change the values for that specific object and not the other objects created from the same class.</b>"
+            + " Attributes and methods can be declared as <b>public</b> meaning they are visible outside of the <color=#000080ff>class</color> or <b>private</b> meaning they can only be accessed within the <color=#000080ff>class</color> - for simplicity <b>all classes in the game are public</b> by default but these are usually private unless declared as public."
             + " <b>Classes are a corner stone of Object Orientated Programming</b>." +
             "\n\nObject Orientation Programming is made up of several key concepts:\n" +
             "<b>Abstraction</b>: Showing only important attributes and methods whilst hiding unnecessary ones using public, private and protected keywords.\n" +
