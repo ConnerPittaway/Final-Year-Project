@@ -76,4 +76,9 @@ public class mainMenuManager : MonoBehaviour
         badgesScreen.SetActive(false);
         mainMenuButtons.SetActive(true);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

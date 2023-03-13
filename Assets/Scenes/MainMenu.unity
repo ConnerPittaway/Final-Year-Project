@@ -181,8 +181,6 @@ MonoBehaviour:
   backgroundSource: {fileID: 95273165}
   sfxSource: {fileID: 380570884}
   currentlyPlaying: 
-  backgroundVolumeSlider: {fileID: 2059251834}
-  sfxVolumeSlider: {fileID: 1047863953}
 --- !u!4 &6090698
 Transform:
   m_ObjectHideFlags: 0
@@ -326,9 +324,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: uiManager, Assembly-CSharp
-        m_MethodName: OnIfStatement
+      - m_Target: {fileID: 1768156843}
+        m_TargetAssemblyTypeName: mainMenuManager, Assembly-CSharp
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
