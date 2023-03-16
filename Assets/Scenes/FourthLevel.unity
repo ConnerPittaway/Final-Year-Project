@@ -9482,8 +9482,8 @@ MonoBehaviour:
     to unlock the door!
 
 
-    Control your duplicate using the arrow keys, only the
-    true version of you will be able to exit the level and not your clone!
+    <b>Control your duplicate using the arrow keys, only
+    the true version of you will be able to exit the level and not your clone!</b>
 
 '
   m_isRightToLeft: 0
@@ -9512,8 +9512,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16.6
-  m_fontSizeBase: 16.6
+  m_fontSize: 16.4
+  m_fontSizeBase: 16.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

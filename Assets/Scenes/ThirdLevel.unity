@@ -8195,13 +8195,21 @@ MonoBehaviour:
     know what ints are, maybe you can use them to defeat the dragon!
 
 
-    The dragon
-    is going to attack you using a for loop which will run a line of code a certain
-    number of times, you will attack the dragon in the same way. If you die it all
-    ends here...
+    <b>The
+    (-=) symbol means that the value on right will be subtracted from the variable
+    on the left and then the result will replace the value of the variable: so i
+    -= 1 is the same as i = i - 1. The same is true for +=, /= and *=.
+
+    </b>
+
+    The
+    dragon is going to attack you using <b>a for loop which will run a line of code
+    a certain number of times</b>, you will attack the dragon in the same way. If
+    you die it all ends here...
 
 
-    Use the magic within the script to defeat the dragon! '
+    Use the magic within the script to defeat the
+    dragon! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
@@ -8228,8 +8236,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.1
-  m_fontSizeBase: 17.1
+  m_fontSize: 14.1
+  m_fontSizeBase: 14.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

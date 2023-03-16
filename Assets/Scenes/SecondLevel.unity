@@ -10310,8 +10310,8 @@ MonoBehaviour:
     There are 8 coins in the room,
     the sword costs 10 gold though... As before an if statement is used to check
     whether you have enough to buy the sword and a while loop checks whether you
-    have the sword bought. A while loop runs the same code block until a condition
-    is met. So buy that sword and unlock the door!'
+    have the sword bought. <b>A while loop runs the same code block while a condition
+    is true.</b> So buy that sword and unlock the door!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
