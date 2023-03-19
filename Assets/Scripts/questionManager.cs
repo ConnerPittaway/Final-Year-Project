@@ -23,7 +23,7 @@ public class questionManager : MonoBehaviour
     void Update()
     {
         //Control Submit Colour
-        if (textFields[0].text == "bool" &&
+        /*if (textFields[0].text == "bool" &&
             textFields[1].text == "int" &&
             textFields[2].text == "string" &&
             textFields[3].text == "char" &&
@@ -40,7 +40,7 @@ public class questionManager : MonoBehaviour
             cb.pressedColor = Color.red;
             cb.selectedColor = Color.red;
             q10SubmitButton.colors = cb;
-        }
+        }*/
     }
 
     public void Question1Correct()
