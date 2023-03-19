@@ -8,6 +8,8 @@ public class questionManager : MonoBehaviour
     public GameObject q1, q2, q3, q4, q5, q6, q7, q8, q9, q10;
     public List<TMP_Text> textFields;
     public List<TMP_InputField> inputs;
+
+    //Buttons
     public Button q10SubmitButton;
     public GameObject victoryScreen;
     public questionHealth health;
