@@ -86,26 +86,29 @@ public class checkCode3 : MonoBehaviour
         int playerNumberOfAttacks = int.Parse(inputs[2].text);
         int dragonHealth = int.Parse(inputs[3].text);
 
-        for (int i = 0; i < playerNumberOfAttacks; i++)
+        if (playerAttack != 0)
         {
-            Debug.Log("Running");
-            if(dragonHealth > 0)
+            for (int i = 0; i < playerNumberOfAttacks; i++)
             {
-                Audio.Instance.PlaySFX("Damage");
-                dragonHealthbar.dragonTakeDamage(playerAttack);
-                dragonHealth = (int)dragonHealthbar.health;
-                inputs[3].text = dragonHealthbar.health.ToString();
-                yield return new WaitForSeconds(0.5f);
+                Debug.Log("Running");
+                if (dragonHealth > 0)
+                {
+                    Audio.Instance.PlaySFX("Damage");
+                    dragonHealthbar.dragonTakeDamage(playerAttack);
+                    dragonHealth = (int)dragonHealthbar.health;
+                    inputs[3].text = dragonHealthbar.health.ToString();
+                    yield return new WaitForSeconds(0.5f);
+                }
+                else
+                {
+                    dragonDead = true;
+                    StopCoroutine(dragonDamage());
+                    running = false;
+                    break;
+                }
             }
-            else
-            {
-                dragonDead = true;
-                StopCoroutine(dragonDamage());
-                running = false;
-                break;
-            }
-        }
 
+        }
         if(dragonHealth <= 0)
         {
             dragonDead = true;
@@ -130,24 +133,27 @@ public class checkCode3 : MonoBehaviour
         int playerHealth = int.Parse(inputs[0].text);
 
         Debug.Log(playerHealth);
-        for (int i = 0; i < dragonNumberOfAttacks; i++)
+        if (dragonAttack != 0)
         {
-            Debug.Log("Running");
-            if (playerHealth > 0)
+            for (int i = 0; i < dragonNumberOfAttacks; i++)
             {
-                Audio.Instance.PlaySFX("Damage");
-                playerHealthbar.playerTakeDamage(dragonAttack);
-                playerHealth = (int)playerHealthbar.health;
-                inputs[0].text = playerHealthbar.health.ToString();
+                Debug.Log("Running");
+                if (playerHealth > 0)
+                {
+                    Audio.Instance.PlaySFX("Damage");
+                    playerHealthbar.playerTakeDamage(dragonAttack);
+                    playerHealth = (int)playerHealthbar.health;
+                    inputs[0].text = playerHealthbar.health.ToString();
+                }
+                else
+                {
+                    playerDead = true;
+                    StopCoroutine(playerDamage());
+                    running = false;
+                    break;
+                }
+                yield return new WaitForSeconds(0.5f);
             }
-            else
-            {
-                playerDead = true;
-                StopCoroutine(playerDamage());
-                running = false;
-                break;
-            }
-            yield return new WaitForSeconds(0.5f);
         }
 
         if(playerHealth > 0)

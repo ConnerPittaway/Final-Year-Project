@@ -8196,7 +8196,7 @@ MonoBehaviour:
 
 
     <b>The
-    (-=) symbol means that the value on right will be subtracted from the variable
+    (-=) symbol means that the value on the right will be subtracted from the variable
     on the left and then the result will replace the value of the variable: so i
     -= 1 is the same as i = i - 1. The same is true for +=, /= and *=.
 

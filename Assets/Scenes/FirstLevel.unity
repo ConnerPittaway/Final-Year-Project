@@ -16338,12 +16338,11 @@ MonoBehaviour:
     <b>To move the character use WASD!</b>\n\nIn front of you is a locked door and
     you have to figure out how to open it using the if statement and booleans in
     the scroll.\n\nA boolean is a true or false statement and <b>an if statement
-    is checks whether the condition in the brackets is true or false and based on
-    that runs a block of code.</b> \n\nThe <b>yellow lines of code are functions</b>
-    - when you call a function the block of code contained within the function is
-    run - in this example the lockDoor() and unlockDoor() functions lock or unlock
-    the door.\n \nUse the booleans to control the outcome of the if statements to
-    progress!"
+    checks whether the condition in the brackets is true or false and based on that
+    runs a block of code.</b> \n\nThe <b>yellow lines of code are functions</b> -
+    when you call a function the block of code contained within the function is run
+    - in this example the lockDoor() and unlockDoor() functions lock or unlock the
+    door.\n \nUse the booleans to control the outcome of the if statements to progress!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}
   m_sharedMaterial: {fileID: 1967363703895642672, guid: 30a0c55c59a309d4aabe738cd33573b5, type: 2}

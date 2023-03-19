@@ -123,7 +123,7 @@ public class uiManager : MonoBehaviour
             "<color=#000080ff>char</color> c = 'A'\n" +
             "<color=#000080ff>string</color> s = \"Hello World\" \n" +
             "<color=#000080ff>bool</color> b = false"
-            + "\n\nThe (-=) symbol means that the value on right will be subtracted from the variable on the left and then the result will replace the value of the variable: so i -= 1 is the same as i = i - 1.The same is true for +=, /= and *=.";
+            + "\n\nThe (-=) symbol means that the value on the right will be subtracted from the variable on the left and then the result will replace the value of the variable: so i -= 1 is the same as i = i - 1.The same is true for +=, /= and *=.";
     }
 
     public void OnFunctionStatement()
