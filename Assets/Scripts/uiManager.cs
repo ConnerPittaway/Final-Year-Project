@@ -79,7 +79,7 @@ public class uiManager : MonoBehaviour
         Audio.Instance.PlaySFX("Click");
         spellDescription.fontSize = defaultTextSize;
         spellDescription.text = "An <color=purple>if</color> statement runs a certain piece of code <b>dependent on <color=purple>if</color> the condition defined within the brackets is true or false</b>. <color=purple>If</color> the condition is true then the code underneath the true statement "
-        + "within the parenthesis will be run otherwise <b>more conditions can be checked</b> using an '<color=purple>else if</color>' or in the case where you want to check that all other statements were false you can use an <color=purple>else</color>. An <color=purple>if</color> statement <b>can be used to check one </b>"
+        + "within the curly braces will be run otherwise <b>more conditions can be checked</b> using an '<color=purple>else if</color>' or in the case where you want to check that all other statements were false you can use an <color=purple>else</color>. An <color=purple>if</color> statement <b>can be used to check one </b>"
         + "<b>condition or multiple conditions.</b>"
         + "\n\nHere is an example of an if statement:\n<color=#000080ff>int</color> i = 1\n<color=#000080ff>string</color> name = \"noName\""
         + "\n<color=purple>if</color> (i == 0) {\n    name = \"Steve\"\n}\n<color=purple>else if</color> (i == 1) {\n    name = \"Bob\"\n}\n<color=purple>else</color> {\n    name = \"Dave\"\n}" +
@@ -103,7 +103,7 @@ public class uiManager : MonoBehaviour
         spellDescription.text = "A <color=purple>for</color> loop <b>will run a piece of code <color=purple>for</color> a certain amount of times</b> defined in the loop condition hence the name <color=purple>for</color> loop. <color=purple>For</color> loops <b>can be used to iterate <color=purple>for</color> the number of elements</b> in a storage location or <color=purple>for</color> a set number of times"
             + "\n\nHere is an example of a for loop:\n<color=purple>for</color> (int i = 0; i < 4; i++) {\n    print(i)\n}" +
             "\n\nResult:\nThe for statement prints to the console the value of i per loop. The first loop will print 0, the second loop will print 1, the third loop will print 2 and the fourth loop will print 3, since i will be equal to 4 in the next iteration of the loop no value will be printed" +
-            "since the code inside the for loop will only run when i is equal to 4. If the value of i were to be stored outside of the for loop and increased the value at the end of the for loop would be 4.";
+            " since the code inside the for loop will only run when i is equal to 4. If the value of i were to be stored outside of the for loop and increased the value at the end of the for loop would be 4.";
     }
 
     public void OnVariableStatement()
@@ -131,7 +131,7 @@ public class uiManager : MonoBehaviour
         Audio.Instance.PlaySFX("Click");
         spellDescription.fontSize = defaultTextSize;
         spellDescription.text = "A <color=yellow>function</color> is <b>a pre-defined block of code that performs a certain task</b> based on the code inside of it. Functions <b>can also allow for values to be passed into them</b> which are called <b>parameters</b> or they can be left blank.\n\nFunctions <b>can </b>"
-            + "<b>also return values</b> if specified or just simply run some lines of code. Functions <b>can be called by writing the name of the <color=yellow>function</color> and whilst passing in parameters</b> if they have been defined. Several functions are used in the game but their definitions "
+            + "<b>also return values</b> if specified or simply run some lines of code. Functions <b>can be called by writing the name of the <color=yellow>function</color> and whilst passing in parameters</b> if they have been defined. Several functions are used in the game but their definitions "
             + "are hidden.\n\nHere is an example of a function: \n" 
             + "<color=#000080ff>void</color> <color=yellow>unlockDoor</color>(<color=#000080ff>Door</color> <color=grey>doorToUnlock</color>) {\n"
             + "    <color=grey>doorToUnlock</color>.locked = false\n"
