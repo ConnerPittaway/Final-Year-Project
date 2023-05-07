@@ -30,9 +30,4 @@ public class PlayerHealth : MonoBehaviour
             //sceneManager.LoadScene0();
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

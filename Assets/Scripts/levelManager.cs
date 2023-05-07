@@ -24,10 +24,4 @@ public class levelManager : MonoBehaviour
     {
         unlockedLevels = new List<bool> { true, false, false, false, false };
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

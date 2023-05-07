@@ -13,12 +13,6 @@ public class BadgeManager : MonoBehaviour
         UpdateBadgeState();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void UpdateBadgeState()
     {
         /*List

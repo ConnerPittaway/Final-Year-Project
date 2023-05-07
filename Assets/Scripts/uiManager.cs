@@ -22,11 +22,6 @@ public class uiManager : MonoBehaviour
     //Unlocked Badges
     public TMP_Text unlockedBadges;
     private int unlockedBadgeNumber;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -153,8 +148,6 @@ public class uiManager : MonoBehaviour
             "<b>Polymorphism</b>: Allows for multiple forms of the same object with similar yet independent attributes and methods.\n" +
             "<b>Inheritance</b>: Allows for child classes to be derived from parent classes to share attributes and methods from the parent class whilst implementing new ones in the child class.\n" +
             "\nHere is an example of a class:\n<color=#000080ff>class</color> Player {\n<color=#000080ff>    int</color> health = 10\n}";
-
-       // , more information on OOP can be found at: https://www.geeksforgeeks.org/introduction-of-object-oriented-programming/";
     }
 
     public void OnReset()

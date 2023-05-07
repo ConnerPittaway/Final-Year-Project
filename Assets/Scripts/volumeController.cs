@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class volumeController : MonoBehaviour
 {
-
     public Slider backgroundVolumeSlider, sfxVolumeSlider;
-
 
     public void OnBackgroundChangeVolume()
     {
@@ -24,11 +22,5 @@ public class volumeController : MonoBehaviour
     {
         backgroundVolumeSlider.value = Audio.Instance.backgroundSource.volume;
         sfxVolumeSlider.value = Audio.Instance.sfxSource.volume;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

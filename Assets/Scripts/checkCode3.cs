@@ -116,12 +116,6 @@ public class checkCode3 : MonoBehaviour
         }
         StopCoroutine(dragonDamage());
         running = false;
-        //StartCoroutine(playerDamage());
-        //StopCoroutine(dragonDamage());
-        //if(!dragonDead)
-        // {
-        //   StartCoroutine(playerDamage());
-        //}
     }
 
     IEnumerator playerDamage()
@@ -166,17 +160,15 @@ public class checkCode3 : MonoBehaviour
             running = false;
             StopCoroutine(playerDamage());
         }
-        //StopCoroutine(playerDamage());
     }
 
     public void CheckInputs()
     {
         int playerHealth = int.Parse(inputs[0].text);
         int playerAttack = int.Parse(inputs[1].text);
-        //int playerNumberOfAttacks = int.Parse(inputs[2].text);
+
         int dragonHealth = int.Parse(inputs[3].text);
         int dragonAttack = int.Parse(inputs[4].text);
-        //int dragonNumberOfAttacks = int.Parse(inputs[5].text);
 
         if (running)
         {
@@ -196,7 +188,6 @@ public class checkCode3 : MonoBehaviour
                 playerHealthbar.maxHealth = playerHealth;
                 playerHealthbar.health = playerHealth;
                 playerHealthbar.healthBar.SetHealth(playerHealth, playerHealth);
-                //playerHealthbar.healthBar.slider.maxValue = playerHealth;
             }
             else
             {
@@ -206,7 +197,6 @@ public class checkCode3 : MonoBehaviour
                     playerDead = true;
                     Audio.Instance.PlaySFX("Player Death");
                     deathScreen2.SetActive(true);
-                    //sceneManager.LoadScene0();
                 }
                 else
                 {
@@ -228,7 +218,6 @@ public class checkCode3 : MonoBehaviour
                 dragonHealthbar.maxHealth = dragonHealth;
                 dragonHealthbar.health = dragonHealth;
                 dragonHealthbar.healthBar.SetHealth(dragonHealth, dragonHealth);
-                //dragonHealthbar.healthBar.slider.maxValue = dragonHealth;
             }
             else
             {
@@ -263,7 +252,6 @@ public class checkCode3 : MonoBehaviour
         if(dragonHealth > 0 && playerHealth > 0)
         {
             StartCoroutine(playerDamage());
-            //StartCoroutine(dragonDamage());
         }
         else if(playerHealth <= 0)
         {
@@ -290,7 +278,6 @@ public class checkCode3 : MonoBehaviour
         else
         {
             Debug.Log("No buff");
-            //Achievements.Instance.SetAchievementsLevel2("changeSwordPrice", true);
         }
     }
     public void dragonValuesChanged()
@@ -308,7 +295,6 @@ public class checkCode3 : MonoBehaviour
         else
         {
             Debug.Log("No nerf");
-            //Achievements.Instance.SetAchievementsLevel2("changeSwordPrice", true);
         }
     }
 }

@@ -27,11 +27,6 @@ public class checkCode : MonoBehaviour
         tilemap.SetTile(tilePos, tileA);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void OpenDoor()
     {
         //Play Sound
