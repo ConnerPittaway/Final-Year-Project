@@ -14,30 +14,6 @@ public class questionManager : MonoBehaviour
     public GameObject victoryScreen;
     public questionHealth health;
 
-    // Update is called once per frame
-    void Update()
-    {
-        //Control Submit Colour
-        if (textFields[0].text == "bool" &&
-            textFields[1].text == "int" &&
-            textFields[2].text == "string" &&
-            textFields[3].text == "char" &&
-            textFields[4].text == "float")
-        {
-            ColorBlock cb = q10SubmitButton.colors;
-            cb.pressedColor = Color.green;
-            cb.selectedColor = Color.green;
-            q10SubmitButton.colors = cb;
-        }
-        else
-        {
-            ColorBlock cb = q10SubmitButton.colors;
-            cb.pressedColor = Color.red;
-            cb.selectedColor = Color.red;
-            q10SubmitButton.colors = cb;
-        }
-    }
-
     public void Question1Correct()
     {
         Audio.Instance.PlaySFX("Correct");
