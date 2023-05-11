@@ -21,9 +21,6 @@ public class Tooltip : MonoBehaviour
 
     private void Update()
     {
-        int headerLength = header.text.Length;
-        int contentLength = content.text.Length;
-
         layoutElement.enabled = Math.Max(header.preferredWidth, content.preferredWidth) >= layoutElement.preferredWidth ? true : false;
 
         Vector2 mousePosition = Input.mousePosition;
